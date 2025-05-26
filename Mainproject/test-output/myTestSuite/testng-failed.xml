@@ -8,16 +8,46 @@
   </listeners>
   <test thread-count="5" name="myTest(failed)">
     <classes>
+      <class name="testscript.CategoryTest">
+        <methods>
+          <include name="editNewCategory"/>
+          <include name="InitialiseBrowser"/>
+          <include name="searchName"/>
+          <include name="createNewCategory"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.CategoryTest -->
+      <class name="testscript.NewsTest">
+        <methods>
+          <include name="searchNewsInTitleField"/>
+          <include name="InitialiseBrowser"/>
+          <include name="generateNews"/>
+          <include name="editNews"/>
+          <include name="deleteNews"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.NewsTest -->
+      <class name="testscript.ContactTest">
+        <methods>
+          <include name="InitialiseBrowser"/>
+          <include name="editContactDetails"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.ContactTest -->
       <class name="testscript.LoginTest">
         <methods>
           <include name="InitialiseBrowser"/>
-          <include name="verifySigninWithInvalidCredentials"/>
           <include name="verifyUserLoginWithValidCredential"/>
-          <include name="verifySigninWithValidUsernameAndInvalidPassword"/>
-          <include name="verifySigninWithInvalidUsernameAndValidPassword"/>
           <include name="driverQuit"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
+      <class name="testscript.FooterTextTest">
+        <methods>
+          <include name="InitialiseBrowser"/>
+          <include name="managefooterText"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.FooterTextTest -->
     </classes>
   </test> <!-- myTest(failed) -->
 </suite> <!-- Failed suite [myTestSuite] -->

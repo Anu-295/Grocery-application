@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-myTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">myTestSuite</span>
+              <span class="suite-name border-failed">myTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,225 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">43 methods, 10 failed,  30 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-myTestSuite" class="hide-methods failed suite-myTestSuite"> (hide)</a> <!-- hide-methods failed suite-myTestSuite -->
+                      <a href="#" panel-name="suite-myTestSuite" class="show-methods failed suite-myTestSuite"> (show)</a> <!-- show-methods failed suite-myTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-myTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="createNewCategory">createNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="deleteNews">deleteNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.ContactTest" class="method navigator-link" hash-for-method="editContactDetails">editContactDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="editNewCategory">editNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="editNews">editNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="generateNews">generateNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.FooterTextTest" class="method navigator-link" hash-for-method="managefooterText">managefooterText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="searchName">searchName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="searchNewsInTitleField">searchNewsInTitleField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginWithValidCredential">verifyUserLoginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-myTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-myTestSuite" class="hide-methods skipped suite-myTestSuite"> (hide)</a> <!-- hide-methods skipped suite-myTestSuite -->
+                      <a href="#" panel-name="suite-myTestSuite" class="show-methods skipped suite-myTestSuite"> (show)</a> <!-- show-methods skipped suite-myTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-myTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="createNewCategory">createNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="createNewCategory">createNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="createNewCategory">createNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="deleteNews">deleteNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="deleteNews">deleteNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="deleteNews">deleteNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.ContactTest" class="method navigator-link" hash-for-method="editContactDetails">editContactDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.ContactTest" class="method navigator-link" hash-for-method="editContactDetails">editContactDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.ContactTest" class="method navigator-link" hash-for-method="editContactDetails">editContactDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="editNewCategory">editNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="editNewCategory">editNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="editNewCategory">editNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="editNews">editNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="editNews">editNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="editNews">editNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="generateNews">generateNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="generateNews">generateNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="generateNews">generateNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.FooterTextTest" class="method navigator-link" hash-for-method="managefooterText">managefooterText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.FooterTextTest" class="method navigator-link" hash-for-method="managefooterText">managefooterText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.FooterTextTest" class="method navigator-link" hash-for-method="managefooterText">managefooterText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="searchName">searchName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="searchName">searchName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="searchName">searchName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="searchNewsInTitleField">searchNewsInTitleField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="searchNewsInTitleField">searchNewsInTitleField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="searchNewsInTitleField">searchNewsInTitleField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginWithValidCredential">verifyUserLoginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginWithValidCredential">verifyUserLoginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginWithValidCredential">verifyUserLoginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-myTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,51 +319,6 @@
                       <a href="#" panel-name="suite-myTestSuite" class="show-methods passed suite-myTestSuite"> (show)</a> <!-- show-methods passed suite-myTestSuite -->
                     </span>
                     <div class="method-list-content passed suite-myTestSuite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="createNewCategory">createNewCategory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="deleteNews">deleteNews</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.ContactTest" class="method navigator-link" hash-for-method="editContactDetails">editContactDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="editNewCategory">editNewCategory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="editNews">editNews</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="generateNews">generateNews</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.FooterTextTest" class="method navigator-link" hash-for-method="managefooterText">managefooterText</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.CategoryTest" class="method navigator-link" hash-for-method="searchName">searchName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="searchNewsInTitleField">searchNewsInTitleField</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifySigninWithInvalidCredentials">verifySigninWithInvalidCredentials</a> <!-- method navigator-link -->
@@ -161,11 +334,6 @@
                         <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifySigninWithValidUsernameAndInvalidPassword">verifySigninWithValidUsernameAndInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginWithValidCredential">verifyUserLoginWithValidCredential</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-myTestSuite -->
                   </li>
                 </ul>
@@ -178,9 +346,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-myTestSuite" class="panel myTestSuite">
-          <div class="suite-myTestSuite-class-passed">
+          <div class="suite-myTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testscript.CategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -189,6 +357,17 @@
                   <a name="createNewCategory">
                   </a> <!-- createNewCategory -->
                   <span class="method-name">createNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -196,6 +375,17 @@
                   <a name="editNewCategory">
                   </a> <!-- editNewCategory -->
                   <span class="method-name">editNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -203,13 +393,24 @@
                   <a name="searchName">
                   </a> <!-- searchName -->
                   <span class="method-name">searchName</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.searchName(CategoryTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-myTestSuite-class-passed -->
-          <div class="suite-myTestSuite-class-passed">
+          </div> <!-- suite-myTestSuite-class-failed -->
+          <div class="suite-myTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testscript.NewsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -218,6 +419,17 @@
                   <a name="deleteNews">
                   </a> <!-- deleteNews -->
                   <span class="method-name">deleteNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.deleteNews(NewsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -225,6 +437,17 @@
                   <a name="editNews">
                   </a> <!-- editNews -->
                   <span class="method-name">editNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.editNews(NewsTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -232,6 +455,17 @@
                   <a name="generateNews">
                   </a> <!-- generateNews -->
                   <span class="method-name">generateNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.generateNews(NewsTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -239,13 +473,24 @@
                   <a name="searchNewsInTitleField">
                   </a> <!-- searchNewsInTitleField -->
                   <span class="method-name">searchNewsInTitleField</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-myTestSuite-class-passed -->
-          <div class="suite-myTestSuite-class-passed">
+          </div> <!-- suite-myTestSuite-class-failed -->
+          <div class="suite-myTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testscript.ContactTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -254,10 +499,653 @@
                   <a name="editContactDetails">
                   </a> <!-- editContactDetails -->
                   <span class="method-name">editContactDetails</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-myTestSuite-class-passed -->
+          </div> <!-- suite-myTestSuite-class-failed -->
+          <div class="suite-myTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLoginWithValidCredential">
+                  </a> <!-- verifyUserLoginWithValidCredential -->
+                  <span class="method-name">verifyUserLoginWithValidCredential</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-failed -->
+          <div class="suite-myTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.FooterTextTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="managefooterText">
+                  </a> <!-- managefooterText -->
+                  <span class="method-name">managefooterText</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-failed -->
+          <div class="suite-myTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.CategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewCategory">
+                  </a> <!-- createNewCategory -->
+                  <span class="method-name">createNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewCategory">
+                  </a> <!-- createNewCategory -->
+                  <span class="method-name">createNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewCategory">
+                  </a> <!-- createNewCategory -->
+                  <span class="method-name">createNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNewCategory">
+                  </a> <!-- editNewCategory -->
+                  <span class="method-name">editNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNewCategory">
+                  </a> <!-- editNewCategory -->
+                  <span class="method-name">editNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNewCategory">
+                  </a> <!-- editNewCategory -->
+                  <span class="method-name">editNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchName">
+                  </a> <!-- searchName -->
+                  <span class="method-name">searchName</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.searchName(CategoryTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchName">
+                  </a> <!-- searchName -->
+                  <span class="method-name">searchName</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.searchName(CategoryTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchName">
+                  </a> <!-- searchName -->
+                  <span class="method-name">searchName</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.CategoryTest.searchName(CategoryTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-skipped -->
+          <div class="suite-myTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.NewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNews">
+                  </a> <!-- deleteNews -->
+                  <span class="method-name">deleteNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.deleteNews(NewsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNews">
+                  </a> <!-- deleteNews -->
+                  <span class="method-name">deleteNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.deleteNews(NewsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNews">
+                  </a> <!-- deleteNews -->
+                  <span class="method-name">deleteNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.deleteNews(NewsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNews">
+                  </a> <!-- editNews -->
+                  <span class="method-name">editNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.editNews(NewsTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNews">
+                  </a> <!-- editNews -->
+                  <span class="method-name">editNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.editNews(NewsTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNews">
+                  </a> <!-- editNews -->
+                  <span class="method-name">editNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.editNews(NewsTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="generateNews">
+                  </a> <!-- generateNews -->
+                  <span class="method-name">generateNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.generateNews(NewsTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="generateNews">
+                  </a> <!-- generateNews -->
+                  <span class="method-name">generateNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.generateNews(NewsTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="generateNews">
+                  </a> <!-- generateNews -->
+                  <span class="method-name">generateNews</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.generateNews(NewsTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchNewsInTitleField">
+                  </a> <!-- searchNewsInTitleField -->
+                  <span class="method-name">searchNewsInTitleField</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchNewsInTitleField">
+                  </a> <!-- searchNewsInTitleField -->
+                  <span class="method-name">searchNewsInTitleField</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchNewsInTitleField">
+                  </a> <!-- searchNewsInTitleField -->
+                  <span class="method-name">searchNewsInTitleField</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-skipped -->
+          <div class="suite-myTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.ContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editContactDetails">
+                  </a> <!-- editContactDetails -->
+                  <span class="method-name">editContactDetails</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editContactDetails">
+                  </a> <!-- editContactDetails -->
+                  <span class="method-name">editContactDetails</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editContactDetails">
+                  </a> <!-- editContactDetails -->
+                  <span class="method-name">editContactDetails</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-skipped -->
+          <div class="suite-myTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLoginWithValidCredential">
+                  </a> <!-- verifyUserLoginWithValidCredential -->
+                  <span class="method-name">verifyUserLoginWithValidCredential</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLoginWithValidCredential">
+                  </a> <!-- verifyUserLoginWithValidCredential -->
+                  <span class="method-name">verifyUserLoginWithValidCredential</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLoginWithValidCredential">
+                  </a> <!-- verifyUserLoginWithValidCredential -->
+                  <span class="method-name">verifyUserLoginWithValidCredential</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-skipped -->
+          <div class="suite-myTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.FooterTextTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="managefooterText">
+                  </a> <!-- managefooterText -->
+                  <span class="method-name">managefooterText</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="managefooterText">
+                  </a> <!-- managefooterText -->
+                  <span class="method-name">managefooterText</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="managefooterText">
+                  </a> <!-- managefooterText -->
+                  <span class="method-name">managefooterText</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+	at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+	at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-skipped -->
           <div class="suite-myTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -285,34 +1173,12 @@
                   <span class="method-name">verifySigninWithValidUsernameAndInvalidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserLoginWithValidCredential">
-                  </a> <!-- verifyUserLoginWithValidCredential -->
-                  <span class="method-name">verifyUserLoginWithValidCredential</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-myTestSuite-class-passed -->
-          <div class="suite-myTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.FooterTextTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="managefooterText">
-                  </a> <!-- managefooterText -->
-                  <span class="method-name">managefooterText</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-myTestSuite-class-passed -->
         </div> <!-- panel myTestSuite -->
         <div panel-name="test-xml-myTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/anumelbin/eclipse-workspace/Mainproject/testng.xml</span>
+            <span class="header-content">/Users/anumelbin/git/Grocery-application/Mainproject/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -326,6 +1192,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;myTest&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testscript.Base&quot;/&gt;
       &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
       &lt;class name=&quot;testscript.CategoryTest&quot;/&gt;
       &lt;class name=&quot;testscript.ContactTest&quot;/&gt;
@@ -344,7 +1211,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">myTest (5 classes)</span>
+                <span class="test-name">myTest (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -370,64 +1237,184 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(43);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createNewCategory')
-data.setCell(0, 2, 'testscript.CategoryTest')
-data.setCell(0, 3, 2414);
+data.setCell(0, 1, 'verifySigninWithInvalidCredentials')
+data.setCell(0, 2, 'testscript.LoginTest')
+data.setCell(0, 3, 270);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'editContactDetails')
-data.setCell(1, 2, 'testscript.ContactTest')
-data.setCell(1, 3, 1699);
+data.setCell(1, 1, 'verifySigninWithValidUsernameAndInvalidPassword')
+data.setCell(1, 2, 'testscript.LoginTest')
+data.setCell(1, 3, 217);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'editNewCategory')
-data.setCell(2, 2, 'testscript.CategoryTest')
-data.setCell(2, 3, 1045);
+data.setCell(2, 1, 'verifySigninWithInvalidUsernameAndValidPassword')
+data.setCell(2, 2, 'testscript.LoginTest')
+data.setCell(2, 3, 205);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyUserLoginWithValidCredential')
-data.setCell(3, 2, 'testscript.LoginTest')
-data.setCell(3, 3, 896);
+data.setCell(3, 1, 'managefooterText')
+data.setCell(3, 2, 'testscript.FooterTextTest')
+data.setCell(3, 3, 19);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'managefooterText')
-data.setCell(4, 2, 'testscript.FooterTextTest')
-data.setCell(4, 3, 893);
+data.setCell(4, 1, 'searchName')
+data.setCell(4, 2, 'testscript.CategoryTest')
+data.setCell(4, 3, 7);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'generateNews')
-data.setCell(5, 2, 'testscript.NewsTest')
-data.setCell(5, 3, 844);
+data.setCell(5, 1, 'verifyUserLoginWithValidCredential')
+data.setCell(5, 2, 'testscript.LoginTest')
+data.setCell(5, 3, 6);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'editNews')
+data.setCell(6, 1, 'deleteNews')
 data.setCell(6, 2, 'testscript.NewsTest')
-data.setCell(6, 3, 816);
+data.setCell(6, 3, 6);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'searchName')
-data.setCell(7, 2, 'testscript.CategoryTest')
-data.setCell(7, 3, 727);
+data.setCell(7, 1, 'editContactDetails')
+data.setCell(7, 2, 'testscript.ContactTest')
+data.setCell(7, 3, 5);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'deleteNews')
-data.setCell(8, 2, 'testscript.NewsTest')
-data.setCell(8, 3, 687);
+data.setCell(8, 1, 'createNewCategory')
+data.setCell(8, 2, 'testscript.CategoryTest')
+data.setCell(8, 3, 5);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'searchNewsInTitleField')
 data.setCell(9, 2, 'testscript.NewsTest')
-data.setCell(9, 3, 681);
+data.setCell(9, 3, 5);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifySigninWithInvalidCredentials')
-data.setCell(10, 2, 'testscript.LoginTest')
-data.setCell(10, 3, 255);
+data.setCell(10, 1, 'searchNewsInTitleField')
+data.setCell(10, 2, 'testscript.NewsTest')
+data.setCell(10, 3, 5);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifySigninWithInvalidUsernameAndValidPassword')
-data.setCell(11, 2, 'testscript.LoginTest')
-data.setCell(11, 3, 210);
+data.setCell(11, 1, 'editNewCategory')
+data.setCell(11, 2, 'testscript.CategoryTest')
+data.setCell(11, 3, 5);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifySigninWithValidUsernameAndInvalidPassword')
+data.setCell(12, 1, 'verifyUserLoginWithValidCredential')
 data.setCell(12, 2, 'testscript.LoginTest')
-data.setCell(12, 3, 208);
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'searchName')
+data.setCell(13, 2, 'testscript.CategoryTest')
+data.setCell(13, 3, 4);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createNewCategory')
+data.setCell(14, 2, 'testscript.CategoryTest')
+data.setCell(14, 3, 4);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'editNewCategory')
+data.setCell(15, 2, 'testscript.CategoryTest')
+data.setCell(15, 3, 4);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyUserLoginWithValidCredential')
+data.setCell(16, 2, 'testscript.LoginTest')
+data.setCell(16, 3, 3);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'searchNewsInTitleField')
+data.setCell(17, 2, 'testscript.NewsTest')
+data.setCell(17, 3, 3);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'editContactDetails')
+data.setCell(18, 2, 'testscript.ContactTest')
+data.setCell(18, 3, 3);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'managefooterText')
+data.setCell(19, 2, 'testscript.FooterTextTest')
+data.setCell(19, 3, 3);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'editNewCategory')
+data.setCell(20, 2, 'testscript.CategoryTest')
+data.setCell(20, 3, 3);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'managefooterText')
+data.setCell(21, 2, 'testscript.FooterTextTest')
+data.setCell(21, 3, 3);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'searchName')
+data.setCell(22, 2, 'testscript.CategoryTest')
+data.setCell(22, 3, 3);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'createNewCategory')
+data.setCell(23, 2, 'testscript.CategoryTest')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'editContactDetails')
+data.setCell(24, 2, 'testscript.ContactTest')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'deleteNews')
+data.setCell(25, 2, 'testscript.NewsTest')
+data.setCell(25, 3, 2);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'editNewCategory')
+data.setCell(26, 2, 'testscript.CategoryTest')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'generateNews')
+data.setCell(27, 2, 'testscript.NewsTest')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'managefooterText')
+data.setCell(28, 2, 'testscript.FooterTextTest')
+data.setCell(28, 3, 2);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'editNews')
+data.setCell(29, 2, 'testscript.NewsTest')
+data.setCell(29, 3, 2);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyUserLoginWithValidCredential')
+data.setCell(30, 2, 'testscript.LoginTest')
+data.setCell(30, 3, 2);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'createNewCategory')
+data.setCell(31, 2, 'testscript.CategoryTest')
+data.setCell(31, 3, 2);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'searchName')
+data.setCell(32, 2, 'testscript.CategoryTest')
+data.setCell(32, 3, 2);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'editNews')
+data.setCell(33, 2, 'testscript.NewsTest')
+data.setCell(33, 3, 2);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'generateNews')
+data.setCell(34, 2, 'testscript.NewsTest')
+data.setCell(34, 3, 2);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'editNews')
+data.setCell(35, 2, 'testscript.NewsTest')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'generateNews')
+data.setCell(36, 2, 'testscript.NewsTest')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'editNews')
+data.setCell(37, 2, 'testscript.NewsTest')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'generateNews')
+data.setCell(38, 2, 'testscript.NewsTest')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'editContactDetails')
+data.setCell(39, 2, 'testscript.ContactTest')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'deleteNews')
+data.setCell(40, 2, 'testscript.NewsTest')
+data.setCell(40, 3, 1);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'searchNewsInTitleField')
+data.setCell(41, 2, 'testscript.NewsTest')
+data.setCell(41, 3, 1);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'deleteNews')
+data.setCell(42, 2, 'testscript.NewsTest')
+data.setCell(42, 3, 1);
 window.suiteTableData['myTestSuite']= { tableData: data, tableDiv: 'times-div-myTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 824 ms</span>
               <div id="times-div-myTestSuite">
               </div> <!-- times-div-myTestSuite -->
             </div> <!-- times-div -->
@@ -460,167 +1447,547 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySigninWithInvalidCredentials</span>
-                <span class="method-start">2398 ms</span>
+                <span class="method-start">3257 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifySigninWithInvalidCredentials status=SUCCESS method=LoginTest.verifySigninWith...)</span>
-                <span class="method-start">2836 ms</span>
+                <span class="method-start">3702 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">2982 ms</span>
+                <span class="method-start">3850 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySigninWithInvalidUsernameAndValidPassword</span>
-                <span class="method-start">4802 ms</span>
+                <span class="method-start">5775 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifySigninWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.ver...)</span>
-                <span class="method-start">5015 ms</span>
+                <span class="method-start">5986 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">5100 ms</span>
+                <span class="method-start">6074 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySigninWithValidUsernameAndInvalidPassword</span>
-                <span class="method-start">6935 ms</span>
+                <span class="method-start">8109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifySigninWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.ver...)</span>
-                <span class="method-start">7148 ms</span>
+                <span class="method-start">8328 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">7236 ms</span>
+                <span class="method-start">8414 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginWithValidCredential</span>
-                <span class="method-start">9002 ms</span>
+                <span class="method-start">10242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredential status=SUCCESS method=LoginTest.verifyUserLoginW...)</span>
-                <span class="method-start">9905 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredential status=SKIP method=LoginTest.verifyUserLoginWith...)</span>
+                <span class="method-start">10254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">10343 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserLoginWithValidCredential</span>
+                <span class="method-start">12147 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredential status=SKIP method=LoginTest.verifyUserLoginWith...)</span>
+                <span class="method-start">12155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">12240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserLoginWithValidCredential</span>
+                <span class="method-start">14089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredential status=SKIP method=LoginTest.verifyUserLoginWith...)</span>
+                <span class="method-start">14096 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">14182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserLoginWithValidCredential</span>
+                <span class="method-start">15984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredential status=FAILURE method=LoginTest.verifyUserLoginW...)</span>
+                <span class="method-start">15995 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.CategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">10000 ms</span>
+                <span class="method-start">16151 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewCategory</span>
-                <span class="method-start">11756 ms</span>
+                <span class="method-start">17966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=createNewCategory status=SUCCESS method=CategoryTest.createNewCategory()[pri:0, ins...)</span>
-                <span class="method-start">14174 ms</span>
+                <span class="method-name">driverQuit([TestResult name=createNewCategory status=SKIP method=CategoryTest.createNewCategory()[pri:0, instan...)</span>
+                <span class="method-start">17973 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">14261 ms</span>
+                <span class="method-start">18058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createNewCategory</span>
+                <span class="method-start">19869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=createNewCategory status=SKIP method=CategoryTest.createNewCategory()[pri:0, instan...)</span>
+                <span class="method-start">19876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">19960 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createNewCategory</span>
+                <span class="method-start">21734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=createNewCategory status=SKIP method=CategoryTest.createNewCategory()[pri:0, instan...)</span>
+                <span class="method-start">21739 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">21824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createNewCategory</span>
+                <span class="method-start">23641 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=createNewCategory status=FAILURE method=CategoryTest.createNewCategory()[pri:0, ins...)</span>
+                <span class="method-start">23646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">23800 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editNewCategory</span>
-                <span class="method-start">16072 ms</span>
+                <span class="method-start">25551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=editNewCategory status=SUCCESS method=CategoryTest.editNewCategory()[pri:0, instanc...)</span>
-                <span class="method-start">17120 ms</span>
+                <span class="method-name">driverQuit([TestResult name=editNewCategory status=SKIP method=CategoryTest.editNewCategory()[pri:0, instance:t...)</span>
+                <span class="method-start">25559 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">17208 ms</span>
+                <span class="method-start">25642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editNewCategory</span>
+                <span class="method-start">27501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNewCategory status=SKIP method=CategoryTest.editNewCategory()[pri:0, instance:t...)</span>
+                <span class="method-start">27506 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">27592 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editNewCategory</span>
+                <span class="method-start">29433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNewCategory status=SKIP method=CategoryTest.editNewCategory()[pri:0, instance:t...)</span>
+                <span class="method-start">29446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">29532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editNewCategory</span>
+                <span class="method-start">31357 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNewCategory status=FAILURE method=CategoryTest.editNewCategory()[pri:0, instanc...)</span>
+                <span class="method-start">31366 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">31526 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchName</span>
-                <span class="method-start">19008 ms</span>
+                <span class="method-start">33271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=searchName status=SUCCESS method=CategoryTest.searchName()[pri:0, instance:testscri...)</span>
-                <span class="method-start">19737 ms</span>
+                <span class="method-name">driverQuit([TestResult name=searchName status=SKIP method=CategoryTest.searchName()[pri:0, instance:testscript....)</span>
+                <span class="method-start">33274 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">33361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchName</span>
+                <span class="method-start">35138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=searchName status=SKIP method=CategoryTest.searchName()[pri:0, instance:testscript....)</span>
+                <span class="method-start">35142 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">35229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchName</span>
+                <span class="method-start">37012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=searchName status=SKIP method=CategoryTest.searchName()[pri:0, instance:testscript....)</span>
+                <span class="method-start">37018 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">37104 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchName</span>
+                <span class="method-start">38889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=searchName status=FAILURE method=CategoryTest.searchName()[pri:0, instance:testscri...)</span>
+                <span class="method-start">38899 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.ContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">19825 ms</span>
+                <span class="method-start">39049 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editContactDetails</span>
-                <span class="method-start">21677 ms</span>
+                <span class="method-start">40845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=editContactDetails status=SUCCESS method=ContactTest.editContactDetails()[pri:0, in...)</span>
-                <span class="method-start">23387 ms</span>
+                <span class="method-name">driverQuit([TestResult name=editContactDetails status=SKIP method=ContactTest.editContactDetails()[pri:0, insta...)</span>
+                <span class="method-start">40851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">40938 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editContactDetails</span>
+                <span class="method-start">42796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editContactDetails status=SKIP method=ContactTest.editContactDetails()[pri:0, insta...)</span>
+                <span class="method-start">42801 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">42886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editContactDetails</span>
+                <span class="method-start">44711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editContactDetails status=SKIP method=ContactTest.editContactDetails()[pri:0, insta...)</span>
+                <span class="method-start">44713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">44798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editContactDetails</span>
+                <span class="method-start">46598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editContactDetails status=FAILURE method=ContactTest.editContactDetails()[pri:0, in...)</span>
+                <span class="method-start">46604 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.FooterTextTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">23478 ms</span>
+                <span class="method-start">46759 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">managefooterText</span>
-                <span class="method-start">25266 ms</span>
+                <span class="method-start">48529 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=managefooterText status=SUCCESS method=FooterTextTest.managefooterText()[pri:0, ins...)</span>
-                <span class="method-start">26161 ms</span>
+                <span class="method-name">driverQuit([TestResult name=managefooterText status=SKIP method=FooterTextTest.managefooterText()[pri:0, instan...)</span>
+                <span class="method-start">48535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">48622 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">managefooterText</span>
+                <span class="method-start">50506 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=managefooterText status=SKIP method=FooterTextTest.managefooterText()[pri:0, instan...)</span>
+                <span class="method-start">50510 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">50591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">managefooterText</span>
+                <span class="method-start">52456 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=managefooterText status=SKIP method=FooterTextTest.managefooterText()[pri:0, instan...)</span>
+                <span class="method-start">52480 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">52566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">managefooterText</span>
+                <span class="method-start">54415 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=managefooterText status=FAILURE method=FooterTextTest.managefooterText()[pri:0, ins...)</span>
+                <span class="method-start">54421 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.NewsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">26249 ms</span>
+                <span class="method-start">54576 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteNews</span>
-                <span class="method-start">28063 ms</span>
+                <span class="method-start">56400 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=deleteNews status=SUCCESS method=NewsTest.deleteNews()[pri:0, instance:testscript.N...)</span>
-                <span class="method-start">28752 ms</span>
+                <span class="method-name">driverQuit([TestResult name=deleteNews status=SKIP method=NewsTest.deleteNews()[pri:0, instance:testscript.News...)</span>
+                <span class="method-start">56407 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">28840 ms</span>
+                <span class="method-start">56491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteNews</span>
+                <span class="method-start">58264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=deleteNews status=SKIP method=NewsTest.deleteNews()[pri:0, instance:testscript.News...)</span>
+                <span class="method-start">58265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">58349 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteNews</span>
+                <span class="method-start">60148 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=deleteNews status=SKIP method=NewsTest.deleteNews()[pri:0, instance:testscript.News...)</span>
+                <span class="method-start">60150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">60232 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteNews</span>
+                <span class="method-start">62024 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=deleteNews status=FAILURE method=NewsTest.deleteNews()[pri:0, instance:testscript.N...)</span>
+                <span class="method-start">62028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">62179 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editNews</span>
-                <span class="method-start">30615 ms</span>
+                <span class="method-start">63968 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=editNews status=SUCCESS method=NewsTest.editNews()[pri:0, instance:testscript.NewsT...)</span>
-                <span class="method-start">31433 ms</span>
+                <span class="method-name">driverQuit([TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest...)</span>
+                <span class="method-start">63972 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">31523 ms</span>
+                <span class="method-start">64059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editNews</span>
+                <span class="method-start">65857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest...)</span>
+                <span class="method-start">65861 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">65946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editNews</span>
+                <span class="method-start">67736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest...)</span>
+                <span class="method-start">67739 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">67823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editNews</span>
+                <span class="method-start">69655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNews status=FAILURE method=NewsTest.editNews()[pri:0, instance:testscript.NewsT...)</span>
+                <span class="method-start">69658 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">69816 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">generateNews</span>
-                <span class="method-start">33306 ms</span>
+                <span class="method-start">71620 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=generateNews status=SUCCESS method=NewsTest.generateNews()[pri:0, instance:testscri...)</span>
-                <span class="method-start">34152 ms</span>
+                <span class="method-name">driverQuit([TestResult name=generateNews status=SKIP method=NewsTest.generateNews()[pri:0, instance:testscript....)</span>
+                <span class="method-start">71623 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">34239 ms</span>
+                <span class="method-start">71704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">generateNews</span>
+                <span class="method-start">73486 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=generateNews status=SKIP method=NewsTest.generateNews()[pri:0, instance:testscript....)</span>
+                <span class="method-start">73487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">73571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">generateNews</span>
+                <span class="method-start">75370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=generateNews status=SKIP method=NewsTest.generateNews()[pri:0, instance:testscript....)</span>
+                <span class="method-start">75372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">75459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">generateNews</span>
+                <span class="method-start">77268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=generateNews status=FAILURE method=NewsTest.generateNews()[pri:0, instance:testscri...)</span>
+                <span class="method-start">77271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">77422 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchNewsInTitleField</span>
-                <span class="method-start">36059 ms</span>
+                <span class="method-start">79189 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=searchNewsInTitleField status=SUCCESS method=NewsTest.searchNewsInTitleField()[pri:...)</span>
-                <span class="method-start">36742 ms</span>
+                <span class="method-name">driverQuit([TestResult name=searchNewsInTitleField status=SKIP method=NewsTest.searchNewsInTitleField()[pri:0, ...)</span>
+                <span class="method-start">79195 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">79282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchNewsInTitleField</span>
+                <span class="method-start">81078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=searchNewsInTitleField status=SKIP method=NewsTest.searchNewsInTitleField()[pri:0, ...)</span>
+                <span class="method-start">81080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">81163 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchNewsInTitleField</span>
+                <span class="method-start">83004 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=searchNewsInTitleField status=SKIP method=NewsTest.searchNewsInTitleField()[pri:0, ...)</span>
+                <span class="method-start">83013 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">83096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchNewsInTitleField</span>
+                <span class="method-start">84879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=searchNewsInTitleField status=FAILURE method=NewsTest.searchNewsInTitleField()[pri:...)</span>
+                <span class="method-start">84884 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

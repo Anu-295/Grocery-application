@@ -14,7 +14,7 @@ public class ExcelReadUtility {
 	static XSSFSheet sh;
 	public static String readStringData(int row,int column,String sheet) throws IOException
 	{
-	f=new FileInputStream("/Users/anumelbin/eclipse-workspace/Mainproject/src/test/resources/TestData/Test data.xlsx");
+	f=new FileInputStream("/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData");
 	w=new XSSFWorkbook(f);
 	sh=w.getSheet(sheet);
 	XSSFRow r=sh.getRow(row);
@@ -23,7 +23,7 @@ public class ExcelReadUtility {
 	}
 	public static String readIntegerData(int row,int column,String sheet) throws IOException
 	{
-		f=new FileInputStream("/Users/anumelbin/eclipse-workspace/Mainproject/src/test/resources/TestData/Test data.xlsx");
+		f=new FileInputStream("/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData");
 		w=new XSSFWorkbook(f);
 		sh=w.getSheet(sheet);
 		XSSFRow r=sh.getRow(row);

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results retried="30" ignored="0" total="43" passed="3" failed="10" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T11:02:55 IST" name="myTestSuite" finished-at="2025-05-23T11:03:31 IST" duration-ms="36885">
+  <suite started-at="2025-05-26T16:57:15 IST" name="myTestSuite" finished-at="2025-05-26T16:58:40 IST" duration-ms="85092">
     <groups>
     </groups>
-    <test started-at="2025-05-23T11:02:55 IST" name="myTest" finished-at="2025-05-23T11:03:31 IST" duration-ms="36885">
+    <test started-at="2025-05-26T16:57:15 IST" name="myTest" finished-at="2025-05-26T16:58:40 IST" duration-ms="85092">
       <class name="testscript.CategoryTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:05 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:06 IST" duration-ms="1756" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:32 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:33 IST" duration-ms="1815" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:06 IST" name="createNewCategory" finished-at="2025-05-23T11:03:09 IST" duration-ms="2414" status="PASS">
+        <test-method retried="true" signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:33 IST" name="createNewCategory" finished-at="2025-05-26T16:57:33 IST" duration-ms="5" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:09 IST" name="driverQuit" finished-at="2025-05-23T11:03:09 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:33 IST" name="driverQuit" finished-at="2025-05-26T16:57:33 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createNewCategory status=SUCCESS method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@3e62d773] output={null}]]]>
+                <![CDATA[[TestResult name=createNewCategory status=SKIP method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:09 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:11 IST" duration-ms="1811" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:33 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:35 IST" duration-ms="1811" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,22 +86,268 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:11 IST" name="editNewCategory" finished-at="2025-05-23T11:03:12 IST" duration-ms="1045" status="PASS">
+        <test-method retried="true" signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:35 IST" name="createNewCategory" finished-at="2025-05-26T16:57:35 IST" duration-ms="4" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:35 IST" name="driverQuit" finished-at="2025-05-26T16:57:35 IST" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewCategory status=SKIP method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:35 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:37 IST" duration-ms="1774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:37 IST" name="createNewCategory" finished-at="2025-05-26T16:57:37 IST" duration-ms="2" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:37 IST" name="driverQuit" finished-at="2025-05-26T16:57:37 IST" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewCategory status=SKIP method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:37 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:39 IST" duration-ms="1816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:39 IST" name="createNewCategory" finished-at="2025-05-26T16:57:39 IST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.createNewCategory(CategoryTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:39 IST" name="driverQuit" finished-at="2025-05-26T16:57:39 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewCategory status=FAILURE method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:39 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:41 IST" duration-ms="1751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:41 IST" name="editNewCategory" finished-at="2025-05-26T16:57:41 IST" duration-ms="4" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:12 IST" name="driverQuit" finished-at="2025-05-23T11:03:12 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:41 IST" name="driverQuit" finished-at="2025-05-26T16:57:41 IST" duration-ms="83" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editNewCategory status=SUCCESS method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@3e62d773] output={null}]]]>
+                <![CDATA[[TestResult name=editNewCategory status=SKIP method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:12 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:14 IST" duration-ms="1800" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:41 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:43 IST" duration-ms="1859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,15 +358,465 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="searchName()[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:14 IST" name="searchName" finished-at="2025-05-23T11:03:14 IST" duration-ms="727" status="PASS">
+        <test-method retried="true" signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:43 IST" name="editNewCategory" finished-at="2025-05-26T16:57:43 IST" duration-ms="3" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchName -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@3e62d773]" started-at="2025-05-23T11:03:14 IST" name="driverQuit" finished-at="2025-05-23T11:03:14 IST" duration-ms="87" status="PASS">
+        </test-method> <!-- editNewCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:43 IST" name="driverQuit" finished-at="2025-05-26T16:57:43 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchName status=SUCCESS method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@3e62d773] output={null}]]]>
+                <![CDATA[[TestResult name=editNewCategory status=SKIP method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:43 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:45 IST" duration-ms="1840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:45 IST" name="editNewCategory" finished-at="2025-05-26T16:57:45 IST" duration-ms="5" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editNewCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:45 IST" name="driverQuit" finished-at="2025-05-26T16:57:45 IST" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editNewCategory status=SKIP method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:45 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:47 IST" duration-ms="1825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:47 IST" name="editNewCategory" finished-at="2025-05-26T16:57:47 IST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.editNewCategory(CategoryTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editNewCategory -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:47 IST" name="driverQuit" finished-at="2025-05-26T16:57:47 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editNewCategory status=FAILURE method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:47 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:49 IST" duration-ms="1745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="searchName()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:49 IST" name="searchName" finished-at="2025-05-26T16:57:49 IST" duration-ms="2" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.searchName(CategoryTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchName -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:49 IST" name="driverQuit" finished-at="2025-05-26T16:57:49 IST" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchName status=SKIP method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:49 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:50 IST" duration-ms="1777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="searchName()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:50 IST" name="searchName" finished-at="2025-05-26T16:57:50 IST" duration-ms="3" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.searchName(CategoryTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchName -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:50 IST" name="driverQuit" finished-at="2025-05-26T16:57:51 IST" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchName status=SKIP method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:51 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:52 IST" duration-ms="1782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="searchName()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:52 IST" name="searchName" finished-at="2025-05-26T16:57:52 IST" duration-ms="4" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.searchName(CategoryTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchName -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:52 IST" name="driverQuit" finished-at="2025-05-26T16:57:52 IST" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchName status=SKIP method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:52 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:54 IST" duration-ms="1784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="searchName()[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:54 IST" name="searchName" finished-at="2025-05-26T16:57:54 IST" duration-ms="7" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.CategoryTest.searchName(CategoryTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchName -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@2c78324b]" started-at="2025-05-26T16:57:54 IST" name="driverQuit" finished-at="2025-05-26T16:57:54 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchName status=FAILURE method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@2c78324b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -87,7 +825,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.CategoryTest -->
       <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:21 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:23 IST" duration-ms="1814" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:10 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:12 IST" duration-ms="1823" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,22 +836,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="deleteNews()[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:23 IST" name="deleteNews" finished-at="2025-05-23T11:03:23 IST" duration-ms="687" status="PASS">
+        <test-method retried="true" signature="deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:12 IST" name="deleteNews" finished-at="2025-05-26T16:58:12 IST" duration-ms="6" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.deleteNews(NewsTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:23 IST" name="driverQuit" finished-at="2025-05-23T11:03:23 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:12 IST" name="driverQuit" finished-at="2025-05-26T16:58:12 IST" duration-ms="83" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteNews status=SUCCESS method=NewsTest.deleteNews()[pri:0, instance:testscript.NewsTest@638ef7ed] output={null}]]]>
+                <![CDATA[[TestResult name=deleteNews status=SKIP method=NewsTest.deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:23 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:25 IST" duration-ms="1774" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:12 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:14 IST" duration-ms="1773" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,22 +904,268 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="editNews()[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:25 IST" name="editNews" finished-at="2025-05-23T11:03:26 IST" duration-ms="816" status="PASS">
+        <test-method retried="true" signature="deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:14 IST" name="deleteNews" finished-at="2025-05-26T16:58:14 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.deleteNews(NewsTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:14 IST" name="driverQuit" finished-at="2025-05-26T16:58:14 IST" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteNews status=SKIP method=NewsTest.deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:14 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:15 IST" duration-ms="1799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:15 IST" name="deleteNews" finished-at="2025-05-26T16:58:15 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.deleteNews(NewsTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:16 IST" name="driverQuit" finished-at="2025-05-26T16:58:16 IST" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteNews status=SKIP method=NewsTest.deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:16 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:17 IST" duration-ms="1792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:17 IST" name="deleteNews" finished-at="2025-05-26T16:58:17 IST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.deleteNews(NewsTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:17 IST" name="driverQuit" finished-at="2025-05-26T16:58:18 IST" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteNews status=FAILURE method=NewsTest.deleteNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:18 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:19 IST" duration-ms="1789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:19 IST" name="editNews" finished-at="2025-05-26T16:58:19 IST" duration-ms="2" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.editNews(NewsTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:26 IST" name="driverQuit" finished-at="2025-05-23T11:03:26 IST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:19 IST" name="driverQuit" finished-at="2025-05-26T16:58:19 IST" duration-ms="86" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editNews status=SUCCESS method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@638ef7ed] output={null}]]]>
+                <![CDATA[[TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:26 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:28 IST" duration-ms="1782" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:19 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:21 IST" duration-ms="1798" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,22 +1176,268 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="generateNews()[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:28 IST" name="generateNews" finished-at="2025-05-23T11:03:29 IST" duration-ms="844" status="PASS">
+        <test-method retried="true" signature="editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:21 IST" name="editNews" finished-at="2025-05-26T16:58:21 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.editNews(NewsTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:21 IST" name="driverQuit" finished-at="2025-05-26T16:58:21 IST" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:21 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:23 IST" duration-ms="1790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:23 IST" name="editNews" finished-at="2025-05-26T16:58:23 IST" duration-ms="2" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.editNews(NewsTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:23 IST" name="driverQuit" finished-at="2025-05-26T16:58:23 IST" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:23 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:25 IST" duration-ms="1832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:25 IST" name="editNews" finished-at="2025-05-26T16:58:25 IST" duration-ms="1" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.editNews(NewsTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:25 IST" name="driverQuit" finished-at="2025-05-26T16:58:25 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editNews status=FAILURE method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:25 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:27 IST" duration-ms="1804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:27 IST" name="generateNews" finished-at="2025-05-26T16:58:27 IST" duration-ms="2" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.generateNews(NewsTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:29 IST" name="driverQuit" finished-at="2025-05-23T11:03:29 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:27 IST" name="driverQuit" finished-at="2025-05-26T16:58:27 IST" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=generateNews status=SUCCESS method=NewsTest.generateNews()[pri:0, instance:testscript.NewsTest@638ef7ed] output={null}]]]>
+                <![CDATA[[TestResult name=generateNews status=SKIP method=NewsTest.generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:29 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:31 IST" duration-ms="1819" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:27 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:29 IST" duration-ms="1782" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,15 +1448,465 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:31 IST" name="searchNewsInTitleField" finished-at="2025-05-23T11:03:31 IST" duration-ms="681" status="PASS">
+        <test-method retried="true" signature="generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:29 IST" name="generateNews" finished-at="2025-05-26T16:58:29 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.generateNews(NewsTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchNewsInTitleField -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@638ef7ed]" started-at="2025-05-23T11:03:31 IST" name="driverQuit" finished-at="2025-05-23T11:03:31 IST" duration-ms="83" status="PASS">
+        </test-method> <!-- generateNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:29 IST" name="driverQuit" finished-at="2025-05-26T16:58:29 IST" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchNewsInTitleField status=SUCCESS method=NewsTest.searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@638ef7ed] output={null}]]]>
+                <![CDATA[[TestResult name=generateNews status=SKIP method=NewsTest.generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:29 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:31 IST" duration-ms="1799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:31 IST" name="generateNews" finished-at="2025-05-26T16:58:31 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.generateNews(NewsTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:31 IST" name="driverQuit" finished-at="2025-05-26T16:58:31 IST" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateNews status=SKIP method=NewsTest.generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:31 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:33 IST" duration-ms="1809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:33 IST" name="generateNews" finished-at="2025-05-26T16:58:33 IST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.generateNews(NewsTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:33 IST" name="driverQuit" finished-at="2025-05-26T16:58:33 IST" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateNews status=FAILURE method=NewsTest.generateNews()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:33 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:35 IST" duration-ms="1767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:35 IST" name="searchNewsInTitleField" finished-at="2025-05-26T16:58:35 IST" duration-ms="5" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchNewsInTitleField -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:35 IST" name="driverQuit" finished-at="2025-05-26T16:58:35 IST" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchNewsInTitleField status=SKIP method=NewsTest.searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:35 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:36 IST" duration-ms="1796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:36 IST" name="searchNewsInTitleField" finished-at="2025-05-26T16:58:36 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchNewsInTitleField -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:36 IST" name="driverQuit" finished-at="2025-05-26T16:58:37 IST" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchNewsInTitleField status=SKIP method=NewsTest.searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:37 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:38 IST" duration-ms="1841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:38 IST" name="searchNewsInTitleField" finished-at="2025-05-26T16:58:38 IST" duration-ms="5" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchNewsInTitleField -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:38 IST" name="driverQuit" finished-at="2025-05-26T16:58:38 IST" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchNewsInTitleField status=SKIP method=NewsTest.searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:38 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:40 IST" duration-ms="1782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:40 IST" name="searchNewsInTitleField" finished-at="2025-05-26T16:58:40 IST" duration-ms="3" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.NewsTest.searchNewsInTitleField(NewsTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchNewsInTitleField -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4e0ae11f]" started-at="2025-05-26T16:58:40 IST" name="driverQuit" finished-at="2025-05-26T16:58:40 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchNewsInTitleField status=FAILURE method=NewsTest.searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@4e0ae11f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -193,7 +1915,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.NewsTest -->
       <class name="testscript.ContactTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.ContactTest@4ef74c30]" started-at="2025-05-23T11:03:14 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:16 IST" duration-ms="1852" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:54 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:56 IST" duration-ms="1796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -204,15 +1926,261 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="editContactDetails()[pri:0, instance:testscript.ContactTest@4ef74c30]" started-at="2025-05-23T11:03:16 IST" name="editContactDetails" finished-at="2025-05-23T11:03:18 IST" duration-ms="1699" status="PASS">
+        <test-method retried="true" signature="editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:56 IST" name="editContactDetails" finished-at="2025-05-26T16:57:56 IST" duration-ms="5" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editContactDetails -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@4ef74c30]" started-at="2025-05-23T11:03:18 IST" name="driverQuit" finished-at="2025-05-23T11:03:18 IST" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:56 IST" name="driverQuit" finished-at="2025-05-26T16:57:56 IST" duration-ms="87" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editContactDetails status=SUCCESS method=ContactTest.editContactDetails()[pri:0, instance:testscript.ContactTest@4ef74c30] output={null}]]]>
+                <![CDATA[[TestResult name=editContactDetails status=SKIP method=ContactTest.editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:56 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:58 IST" duration-ms="1858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:58 IST" name="editContactDetails" finished-at="2025-05-26T16:57:58 IST" duration-ms="3" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContactDetails -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:58 IST" name="driverQuit" finished-at="2025-05-26T16:57:58 IST" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editContactDetails status=SKIP method=ContactTest.editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:57:58 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:00 IST" duration-ms="1825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:58:00 IST" name="editContactDetails" finished-at="2025-05-26T16:58:00 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContactDetails -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:58:00 IST" name="driverQuit" finished-at="2025-05-26T16:58:00 IST" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editContactDetails status=SKIP method=ContactTest.editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:58:00 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:02 IST" duration-ms="1800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:58:02 IST" name="editContactDetails" finished-at="2025-05-26T16:58:02 IST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.ContactTest.editContactDetails(ContactTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContactDetails -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@79defdc]" started-at="2025-05-26T16:58:02 IST" name="driverQuit" finished-at="2025-05-26T16:58:02 IST" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editContactDetails status=FAILURE method=ContactTest.editContactDetails()[pri:0, instance:testscript.ContactTest@79defdc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -221,7 +2189,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.ContactTest -->
       <class name="testscript.FooterTextTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.FooterTextTest@7283d3eb]" started-at="2025-05-23T11:03:18 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:20 IST" duration-ms="1788" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:02 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:04 IST" duration-ms="1769" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,15 +2200,261 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="managefooterText()[pri:0, instance:testscript.FooterTextTest@7283d3eb]" started-at="2025-05-23T11:03:20 IST" name="managefooterText" finished-at="2025-05-23T11:03:21 IST" duration-ms="893" status="PASS">
+        <test-method retried="true" signature="managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:04 IST" name="managefooterText" finished-at="2025-05-26T16:58:04 IST" duration-ms="3" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- managefooterText -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@7283d3eb]" started-at="2025-05-23T11:03:21 IST" name="driverQuit" finished-at="2025-05-23T11:03:21 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:04 IST" name="driverQuit" finished-at="2025-05-26T16:58:04 IST" duration-ms="86" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=managefooterText status=SUCCESS method=FooterTextTest.managefooterText()[pri:0, instance:testscript.FooterTextTest@7283d3eb] output={null}]]]>
+                <![CDATA[[TestResult name=managefooterText status=SKIP method=FooterTextTest.managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:04 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:06 IST" duration-ms="1883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:06 IST" name="managefooterText" finished-at="2025-05-26T16:58:06 IST" duration-ms="3" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- managefooterText -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:06 IST" name="driverQuit" finished-at="2025-05-26T16:58:06 IST" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=managefooterText status=SKIP method=FooterTextTest.managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:06 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:08 IST" duration-ms="1863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:08 IST" name="managefooterText" finished-at="2025-05-26T16:58:08 IST" duration-ms="19" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- managefooterText -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:08 IST" name="driverQuit" finished-at="2025-05-26T16:58:08 IST" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=managefooterText status=SKIP method=FooterTextTest.managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:08 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:58:10 IST" duration-ms="1849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:10 IST" name="managefooterText" finished-at="2025-05-26T16:58:10 IST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.FooterTextTest.managefooterText(FooterTextTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- managefooterText -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@18317edc]" started-at="2025-05-26T16:58:10 IST" name="driverQuit" finished-at="2025-05-26T16:58:10 IST" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=managefooterText status=FAILURE method=FooterTextTest.managefooterText()[pri:0, instance:testscript.FooterTextTest@18317edc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -249,7 +2463,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.FooterTextTest -->
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:02:55 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:02:57 IST" duration-ms="2396" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:15 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:19 IST" duration-ms="3255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,22 +2474,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifySigninWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:02:57 IST" name="verifySigninWithInvalidCredentials" finished-at="2025-05-23T11:02:57 IST" duration-ms="255" status="PASS">
+        <test-method signature="verifySigninWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:19 IST" name="verifySigninWithInvalidCredentials" finished-at="2025-05-26T16:57:19 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySigninWithInvalidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:02:57 IST" name="driverQuit" finished-at="2025-05-23T11:02:58 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:19 IST" name="driverQuit" finished-at="2025-05-26T16:57:19 IST" duration-ms="145" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySigninWithInvalidCredentials status=SUCCESS method=LoginTest.verifySigninWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@10289886] output={null}]]]>
+                <![CDATA[[TestResult name=verifySigninWithInvalidCredentials status=SUCCESS method=LoginTest.verifySigninWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:02:58 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:02:59 IST" duration-ms="1819" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:19 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:21 IST" duration-ms="1925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,22 +2500,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:02:59 IST" name="verifySigninWithInvalidUsernameAndValidPassword" finished-at="2025-05-23T11:03:00 IST" duration-ms="210" status="PASS">
+        <test-method signature="verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:21 IST" name="verifySigninWithInvalidUsernameAndValidPassword" finished-at="2025-05-26T16:57:21 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySigninWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:00 IST" name="driverQuit" finished-at="2025-05-23T11:03:00 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:21 IST" name="driverQuit" finished-at="2025-05-26T16:57:21 IST" duration-ms="88" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySigninWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@10289886] output={null}]]]>
+                <![CDATA[[TestResult name=verifySigninWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:00 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:02 IST" duration-ms="1835" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:21 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:23 IST" duration-ms="2035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -312,22 +2526,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifySigninWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:02 IST" name="verifySigninWithValidUsernameAndInvalidPassword" finished-at="2025-05-23T11:03:02 IST" duration-ms="208" status="PASS">
+        <test-method signature="verifySigninWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:23 IST" name="verifySigninWithValidUsernameAndInvalidPassword" finished-at="2025-05-26T16:57:24 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySigninWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:02 IST" name="driverQuit" finished-at="2025-05-23T11:03:02 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:24 IST" name="driverQuit" finished-at="2025-05-26T16:57:24 IST" duration-ms="86" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySigninWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifySigninWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@10289886] output={null}]]]>
+                <![CDATA[[TestResult name=verifySigninWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifySigninWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:02 IST" name="InitialiseBrowser" finished-at="2025-05-23T11:03:04 IST" duration-ms="1766" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:24 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:26 IST" duration-ms="1828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -338,15 +2552,261 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:04 IST" name="verifyUserLoginWithValidCredential" finished-at="2025-05-23T11:03:05 IST" duration-ms="896" status="PASS">
+        <test-method retried="true" signature="verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:26 IST" name="verifyUserLoginWithValidCredential" finished-at="2025-05-26T16:57:26 IST" duration-ms="6" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithValidCredential -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@10289886]" started-at="2025-05-23T11:03:05 IST" name="driverQuit" finished-at="2025-05-23T11:03:05 IST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:26 IST" name="driverQuit" finished-at="2025-05-26T16:57:26 IST" duration-ms="87" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithValidCredential status=SUCCESS method=LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@10289886] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredential status=SKIP method=LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:26 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:27 IST" duration-ms="1804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:27 IST" name="verifyUserLoginWithValidCredential" finished-at="2025-05-26T16:57:28 IST" duration-ms="4" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidCredential -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:28 IST" name="driverQuit" finished-at="2025-05-26T16:57:28 IST" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredential status=SKIP method=LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:28 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:29 IST" duration-ms="1849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method retried="true" signature="verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:29 IST" name="verifyUserLoginWithValidCredential" finished-at="2025-05-26T16:57:29 IST" duration-ms="2" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidCredential -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:29 IST" name="driverQuit" finished-at="2025-05-26T16:57:30 IST" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredential status=SKIP method=LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:30 IST" name="InitialiseBrowser" finished-at="2025-05-26T16:57:31 IST" duration-ms="1802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method signature="verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:31 IST" name="verifyUserLoginWithValidCredential" finished-at="2025-05-26T16:57:31 IST" duration-ms="3" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/anumelbin/git/Grocery-application/Mainproject/src/test/resources/TestData (Is a directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at utilities.ExcelReadUtility.readStringData(ExcelReadUtility.java:17)
+at pages.LoginPage.loginByUsingUtility(LoginPage.java:52)
+at testscript.LoginTest.verifyUserLoginWithValidCredential(LoginTest.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidCredential -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@54e041a4]" started-at="2025-05-26T16:57:31 IST" name="driverQuit" finished-at="2025-05-26T16:57:31 IST" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredential status=FAILURE method=LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@54e041a4] output={null}]]]>
               </value>
             </param>
           </params>

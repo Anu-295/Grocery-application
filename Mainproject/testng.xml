@@ -6,7 +6,8 @@
 	<listener class-name="Listeners.RetryListener"></listener>
 	</listeners>
 		<classes>
-			<class name="testscript.LoginTest"></class>
+		<class name="testscript.Base"></class>
+			 <class name="testscript.LoginTest"></class>
 			<class name="testscript.CategoryTest"></class>
 			<class name="testscript.ContactTest"></class>
 			<class name="testscript.FooterTextTest"></class>

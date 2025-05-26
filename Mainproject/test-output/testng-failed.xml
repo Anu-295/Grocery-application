@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [myTestSuite]">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="Listeners.Listeners"/>
+    <listener class-name="Listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="myTest(failed)">
     <classes>
+      <class name="testscript.CategoryTest">
+        <methods>
+          <include name="editNewCategory"/>
+          <include name="InitialiseBrowser"/>
+          <include name="searchName"/>
+          <include name="createNewCategory"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.CategoryTest -->
+      <class name="testscript.NewsTest">
+        <methods>
+          <include name="searchNewsInTitleField"/>
+          <include name="InitialiseBrowser"/>
+          <include name="generateNews"/>
+          <include name="editNews"/>
+          <include name="deleteNews"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.NewsTest -->
+      <class name="testscript.ContactTest">
+        <methods>
+          <include name="InitialiseBrowser"/>
+          <include name="editContactDetails"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.ContactTest -->
       <class name="testscript.LoginTest">
         <methods>
           <include name="InitialiseBrowser"/>
@@ -10,6 +41,13 @@
           <include name="driverQuit"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
+      <class name="testscript.FooterTextTest">
+        <methods>
+          <include name="InitialiseBrowser"/>
+          <include name="managefooterText"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.FooterTextTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [myTestSuite] -->

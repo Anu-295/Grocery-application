@@ -9,9 +9,9 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import seleniumbasics.Base;
+import testscript.Base;
 import utilities.ExtentReportUtility;
-//right click on ITestListener-open declaratiion
+//right click on ITestListener-open declaration
 public class Listeners extends Base implements ITestListener {//ITestL is interface. overriding the methods of itestlistenres
 
 	  ExtentTest test;   
@@ -38,7 +38,7 @@ public class Listeners extends Base implements ITestListener {//ITestL is interf
 	 		WebDriver driver =null; 
 	 		String testMethodName = result.getMethod().getMethodName(); 
 	 		try { 
-	 			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver") 
+	 			driver =(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver") 
 	 					.get(result.getInstance()); 
 	 		} catch (IllegalArgumentException e) { 
 	  

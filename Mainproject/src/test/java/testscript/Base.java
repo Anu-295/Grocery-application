@@ -21,7 +21,7 @@ public class Base {
 	Properties prop;
 	FileInputStream fs;
 	 WebDriver driver;
-	  @BeforeMethod
+	  @BeforeMethod(alwaysRun=true) 
 	  @Parameters("browser")
 	  public void InitialiseBrowser(String browser) throws Exception {
 		  Properties prop;
