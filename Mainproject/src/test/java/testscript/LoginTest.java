@@ -20,32 +20,32 @@ public class LoginTest extends Base{
   
   @Test
   public void verifySigninWithValidUsernameAndInvalidPassword() {
-	  LoginPage mainloginpage=new LoginPage(driver);
-	  mainloginpage.enterUserNameOnUsernameField("admin");
-	  mainloginpage.enterPasswordOnPasswordField("aaamin");
-	  mainloginpage.clickOnSigninButton();
-	  boolean alertpresent=mainloginpage.isAlertPresent();
+	  LoginPage loginpage=new LoginPage(driver);
+	  loginpage.enterUserNameOnUsernameField("admin");
+	  loginpage.enterPasswordOnPasswordField("aaamin");
+	  loginpage.clickOnSigninButton();
+	  boolean alertpresent=loginpage.isAlertPresent();
 	  Assert.assertTrue(alertpresent,"Alert not presented");
 }
   
   @Test
   public void verifySigninWithInvalidUsernameAndValidPassword() {
-	  LoginPage mainloginpage=new LoginPage(driver);
+	  LoginPage loginpage=new LoginPage(driver);
 	  
-	  mainloginpage.enterUserNameOnUsernameField("aaain");
-	  mainloginpage.enterPasswordOnPasswordField("admin");
-	  mainloginpage.clickOnSigninButton();
-	  boolean alertpresent=mainloginpage.isAlertPresent();
+	  loginpage.enterUserNameOnUsernameField("aaain");
+	  loginpage.enterPasswordOnPasswordField("admin");
+	  loginpage.clickOnSigninButton();
+	  boolean alertpresent=loginpage.isAlertPresent();
 	  Assert.assertTrue(alertpresent,"Alert not presented");
   }
   
   @Test
   public void verifySigninWithInvalidCredentials() {
-	  LoginPage mainloginpage=new LoginPage(driver);
-	  mainloginpage.enterUserNameOnUsernameField("ain");
-	  mainloginpage.enterPasswordOnPasswordField("ain");
-	  mainloginpage.clickOnSigninButton();
-	 boolean alertpresent= mainloginpage.isAlertPresent();
+	  LoginPage loginpage=new LoginPage(driver);
+	  loginpage.enterUserNameOnUsernameField("ain");
+	  loginpage.enterPasswordOnPasswordField("ain");
+	  loginpage.clickOnSigninButton();
+	 boolean alertpresent= loginpage.isAlertPresent();
 	  Assert.assertTrue(alertpresent,"Alert not presented");
   }
 }

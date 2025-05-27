@@ -15,5 +15,6 @@ public static final String NEWS_DELETENEWS= "can not delete news";
 public static final String NEWS_SEARCHNEWS="element is not present in table";
 
 //public static final String LOGIN_EXCELFILE="/Users/anumelbin/eclipse-workspace/Mainproject/src/test/resources/TestData/Test data.xlsx";
-public static final String CATEGORY_IMAGEPATH="/Users/anumelbin/eclipse-workspace/Mainproject/src/test/resources/Category image/pisauikan-N29JXkNO1xI-unsplash.jpg";
+public static final String LOGIN_EXCELFILE=System.getProperty("user.dir")+"/src/test/resources/TestData/Test data.xlsx";
+public static final String CATEGORY_IMAGEPATH=System.getProperty("user.dir")+"/src/test/resources/Category image/pisauikan-N29JXkNO1xI-unsplash.jpg";
 }
