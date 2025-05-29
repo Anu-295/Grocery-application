@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {//user actions 
+public class HomePage {
 	public WebDriver driver;
 	public HomePage(WebDriver driver)
 	{
@@ -30,7 +30,8 @@ public ContactPage clickOnManageContactButton()
 {
 manageContact.click();
 return new ContactPage(driver);
-}public FooterTextPage clickOnManageFooterTextButton()
+}
+public FooterTextPage clickOnManageFooterTextButton()
 {
 	manageFooterText.click();
 	return new FooterTextPage(driver);

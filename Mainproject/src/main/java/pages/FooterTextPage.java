@@ -18,7 +18,7 @@ public class FooterTextPage {
 @FindBy(xpath="//input[@name='phone']")WebElement phoneField; 
 @FindBy(xpath="//button[@name='Update']")WebElement updateButton;
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertMessage;
-public void manageFooterText(String address,String email,String phone)
+public FooterTextPage manageFooterText(String address,String email,String phone)
 {
 editButton.click();
 addressField.clear();
@@ -28,6 +28,7 @@ emailField.sendKeys(email);
 phoneField.clear();
 phoneField.sendKeys(phone);
 updateButton.click();
+return this;
 }
 public boolean isAlertDisplayed()
 {

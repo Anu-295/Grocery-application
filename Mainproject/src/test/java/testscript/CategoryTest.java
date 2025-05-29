@@ -39,7 +39,7 @@ public class CategoryTest extends Base  {
 		  login=new LoginPage(driver);
 		  homepage= login.loginByUsingUtility();
 		  categorypage=homepage.clickOnManageCategoryButton();
-		  boolean namePresent=categorypage.searchCategoryInSearchField("Shoes");
+		  boolean namePresent=categorypage.searchCategoryInSearchField("Pizza");
 		  Assert.assertTrue(namePresent,Constants.CATEGORY_SEARCHCATEGORY);
 	  }
 }

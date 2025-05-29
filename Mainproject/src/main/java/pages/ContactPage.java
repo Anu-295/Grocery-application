@@ -26,36 +26,40 @@ public class ContactPage {
 @FindBy(xpath="//button[@type='submit']")WebElement updateButton;
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertText;
 
-public void clickOnEditContact()
+public ContactPage clickOnEditContact()
 {
 	EditButton.click();
+	return this;
 }
-public void phonenumberUsingFakerutility()
+public ContactPage phonenumberUsingFakerutility()
 {
 PhoneField.clear();
 	String phonenumber=fakerutility.generatephoneNumber();
 	PhoneField.sendKeys(phonenumber);
-
+	return this;
 }
-public void emailIdUsingFakerutility()
+public ContactPage emailIdUsingFakerutility()
 {
 	Emailfield.clear();
 	String emailid=fakerutility.generateEmailID();
 	Emailfield.sendKeys(emailid);
+	return this;
 }
-public void addressUsingFakerutility()
+public ContactPage addressUsingFakerutility()
 {
 	addressField.clear();
 	String address=fakerutility.generateAdress();
 	addressField.sendKeys(address);
+	return this;
 }
-public void enterDeliverTimeAndcharge(String deliveryTime,String deliveryCharge)
+public ContactPage enterDeliverTimeAndcharge(String deliveryTime,String deliveryCharge)
 {
 	deliveryTimeField.clear();
 	deliveryTimeField.sendKeys(deliveryTime+generalUtility.generateCurrentDateAndTime());
 	deliveryChargeField.clear();
 	deliveryChargeField.sendKeys(deliveryCharge);
 	generalUtility.clickJavaScriptExecutor(updateButton, driver);
+	return this;
 	}
 public boolean isAlertPresent()
 {

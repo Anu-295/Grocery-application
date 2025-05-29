@@ -31,11 +31,12 @@ public class NewsPage {
 @FindBy(xpath="//input[@placeholder='Title']")WebElement titleField;
 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tr//td[1]")List<WebElement> table;
 @FindBy(xpath="//button[@value='sr']")WebElement search;
-public void createNews(String news)
+public  NewsPage  createNews(String news)
 {
 newButton.click();	
 newsField.sendKeys(news);
 saveButton.click();
+return this;
 }
 public boolean isAlertText()
 {
@@ -43,12 +44,13 @@ public boolean isAlertText()
 }
 
 
-public void editNews(String newNews)
+public  NewsPage  editNews(String newNews)
 {
 	editButton.click();
 	editNewsField.clear();
 	editNewsField.sendKeys(newNews);
-	updateButton.click();	
+	updateButton.click();
+	return this;
 }
 public boolean isEditAlertPresent()
 {
@@ -56,10 +58,11 @@ public boolean isEditAlertPresent()
 }
 
 
-public void deleteNews()
+public  NewsPage  deleteNews()
 {
 deleteButton.click();
 driver.switchTo().alert().accept();
+return this;
 }
 public boolean isDeleteAlertPresent()
 {
