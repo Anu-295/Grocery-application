@@ -40,7 +40,7 @@ public class CategoryPage {
 @FindBy(xpath="//button[@type='submit']")WebElement search;
 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tr//td[1]")List<WebElement> table;
 
-public void createNewCategory(String categoryname)
+public CategoryPage createNewCategory(String categoryname)
 {
 	newButton.click();
 	enterTheCategory.sendKeys(categoryname+generalUtility.generateCurrentDateAndTime());
@@ -51,6 +51,7 @@ public void createNewCategory(String categoryname)
 	//showOnTopWindow.click();
 	//showOnLeftwindow.click();
 	generalUtility.clickJavaScriptExecutor(SaveButton, driver);
+	return this;
 	}
 public boolean isAlertMessageDisplayed()
 {
@@ -58,13 +59,13 @@ public boolean isAlertMessageDisplayed()
 }
 
 
-public void editCategory()
+public CategoryPage editCategory()
 {
 editButton.click();
 deleteButton.click();
 driver.switchTo().alert().accept();
 generalUtility.clickJavaScriptExecutor(updateButton, driver);
-
+return this;
 }
 public boolean isDeleteAlertDisplayed()
 {

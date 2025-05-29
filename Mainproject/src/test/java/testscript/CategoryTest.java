@@ -11,15 +11,15 @@ import pages.HomePage;
 import pages.LoginPage;
 
 public class CategoryTest extends Base  {
+	LoginPage login;
+	HomePage homepage;
+	CategoryPage categorypage;
 
 	  @Test
 	  public void createNewCategory() throws IOException {
-		  LoginPage login=new LoginPage(driver);
-		  login.loginByUsingUtility();
-		  HomePage homepage=new HomePage(driver);
-		  homepage.clickOnManageCategoryButton();
-		  CategoryPage categorypage=new CategoryPage(driver);
-		  categorypage.createNewCategory("Alovera");
+		  login=new LoginPage(driver);
+		  homepage=login.loginByUsingUtility();
+		  categorypage=homepage.clickOnManageCategoryButton().createNewCategory("Alovera");
 		  boolean alertmessage=categorypage.isAlertMessageDisplayed();
 		  Assert.assertTrue(alertmessage,Constants.CATEGORY_CREATECATEGORY );
 		 }
@@ -27,23 +27,18 @@ public class CategoryTest extends Base  {
 	  @Test
 	  public void editNewCategory() throws IOException
 	  {
-		  LoginPage login=new LoginPage(driver);
-		  login.loginByUsingUtility();
-		  HomePage homepage=new HomePage(driver);
-		  homepage.clickOnManageCategoryButton();
-		  CategoryPage categorypage=new CategoryPage(driver);
-		  categorypage.editCategory();
+		  login=new LoginPage(driver);
+		  homepage=login.loginByUsingUtility();
+		  categorypage=homepage.clickOnManageCategoryButton().editCategory();
 		  boolean deletemessage=categorypage.isDeleteAlertDisplayed();
 		  Assert.assertTrue(deletemessage,Constants.CATEGORY_EDITCATEGORY );
   }
 	  @Test
 	  public void searchName() throws IOException
 	  {
-		  LoginPage login=new LoginPage(driver);
-		  login.loginByUsingUtility();
-		  HomePage homepage=new HomePage(driver);
-		  homepage.clickOnManageCategoryButton();
-		  CategoryPage categorypage=new CategoryPage(driver);
+		  login=new LoginPage(driver);
+		  homepage= login.loginByUsingUtility();
+		  categorypage=homepage.clickOnManageCategoryButton();
 		  boolean namePresent=categorypage.searchCategoryInSearchField("Shoes");
 		  Assert.assertTrue(namePresent,Constants.CATEGORY_SEARCHCATEGORY);
 	  }

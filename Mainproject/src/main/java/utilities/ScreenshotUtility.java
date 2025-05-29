@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
-public class ScreenshotUtility {
+public class ScreenshotUtility {//to capture the current state of a webpage by using TakesScreenshot interface
 	 public void getScreenshot(WebDriver driver, String failedtestcase) throws IOException { 
 	 		TakesScreenshot scrShot = (TakesScreenshot) driver;  //Takescreenshot interface. created obj  
 	 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);//captured screenshot saved to a temporary path      

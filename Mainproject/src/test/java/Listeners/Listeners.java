@@ -18,14 +18,14 @@ ExtentTest test;
  
   ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();  //for thread safety
  
-  public void onTestStart(ITestResult result) {    
+  public void onTestStart(ITestResult result) {  //call at the time of test starts  
  
   ITestListener.super.onTestStart(result);    
   test = extent.createTest(result.getMethod().getMethodName());  
   extentTest.set(test);   }  
   public void onTestSuccess(ITestResult result) {
  
-  ITestListener.super.onTestSuccess(result);
+  ITestListener.super.onTestSuccess(result);//call at the time of test 
   extentTest.get().log(Status.PASS, "Test Passed");
   }
  

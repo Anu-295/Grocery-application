@@ -33,9 +33,10 @@ public class LoginPage {
     	passwordField.sendKeys(password);
     }
     
-    public void clickOnSigninButton()
+    public HomePage clickOnSigninButton()
     {
     	signinButton.click();
+    	return new HomePage(driver);
     }
     
     public boolean isHomePageLoaded()
@@ -47,12 +48,13 @@ public class LoginPage {
     {
     	return alertMessage.isDisplayed();
     }
-    public void loginByUsingUtility() throws IOException
+    public HomePage loginByUsingUtility() throws IOException
     {
     	String userName=ExcelReadUtility.readStringData(1, 0,"Login page");
     	String password=ExcelReadUtility.readStringData(1, 1, "Login page");
     	userNameField.sendKeys(userName);
     	passwordField.sendKeys(password);
     	signinButton.click();
+    	return new HomePage(driver);
     	}
 }

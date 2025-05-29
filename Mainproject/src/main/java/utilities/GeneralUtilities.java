@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class GeneralUtilities {
+public class GeneralUtilities {//basic selenium commands
 	public String selectDropdownWithValue(WebElement element, String value) {
 		Select select = new Select(element);
 		select.selectByValue(value);

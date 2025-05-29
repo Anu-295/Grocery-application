@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class HomePage {//user actions 
 	public WebDriver driver;
 	public HomePage(WebDriver driver)
 	{
@@ -17,23 +17,27 @@ public class HomePage {
 @FindBy(xpath="//p[text()='Manage Contact']")WebElement manageContact;
 @FindBy(xpath="//p[text()='Manage Footer Text']")WebElement manageFooterText;
 @FindBy(xpath="//p[text()='Manage News']")WebElement manageNews;
-public void clickOnManageCategoryButton()
+public CategoryPage clickOnManageCategoryButton()//chaining of pages
 {
-	mangeCategory.click();	
+	mangeCategory.click();
+	return new CategoryPage(driver);
 }
-public void clickOnManageProductButton()
+/*public void clickOnManageProductButton()
 {
 	manageProduct.click();	
-}
-public void clickOnManageContactButton()
+}*/
+public ContactPage clickOnManageContactButton()
 {
-manageContact.click();	
-}public void clickOnManageFooterTextButton()
+manageContact.click();
+return new ContactPage(driver);
+}public FooterTextPage clickOnManageFooterTextButton()
 {
 	manageFooterText.click();
+	return new FooterTextPage(driver);
 }
-public void clickOnManageNews()
+public NewsPage  clickOnManageNews()
 {
 	manageNews.click();	
+	return new NewsPage(driver);
 }
 }

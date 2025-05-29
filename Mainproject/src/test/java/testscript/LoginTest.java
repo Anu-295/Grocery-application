@@ -3,18 +3,19 @@ package testscript;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import constants.Constants;
 import pages.LoginPage;
 
 public class LoginTest extends Base{
-  @Test
+  @Test(groups="smoke")
 	  public void verifyUserLoginWithValidCredential() throws IOException {
 		  LoginPage login=new LoginPage(driver); 
 		  login.loginByUsingUtility();
 		  boolean isHomePageOpened=login.isHomePageLoaded();
-		  Assert.assertTrue(isHomePageOpened,Constants.LOGIN_VERIFYWITHVALIDCREDENTIAL);
+		  Assert.assertTrue(isHomePageOpened,Constants.LOGIN_VERIFYWITHVALIDCREDENTIAL);//using hard assertion
 	 
   }
   
@@ -22,30 +23,42 @@ public class LoginTest extends Base{
   public void verifySigninWithValidUsernameAndInvalidPassword() {
 	  LoginPage loginpage=new LoginPage(driver);
 	  loginpage.enterUserNameOnUsernameField("admin");
-	  loginpage.enterPasswordOnPasswordField("aaamin");
+	  loginpage.enterPasswordOnPasswordField("cuamb");
 	  loginpage.clickOnSigninButton();
 	  boolean alertpresent=loginpage.isAlertPresent();
 	  Assert.assertTrue(alertpresent,"Alert not presented");
 }
   
-  @Test
+  @Test(groups="smoke")
   public void verifySigninWithInvalidUsernameAndValidPassword() {
 	  LoginPage loginpage=new LoginPage(driver);
 	  
-	  loginpage.enterUserNameOnUsernameField("aaain");
+	  loginpage.enterUserNameOnUsernameField("abhhin");
 	  loginpage.enterPasswordOnPasswordField("admin");
 	  loginpage.clickOnSigninButton();
 	  boolean alertpresent=loginpage.isAlertPresent();
 	  Assert.assertTrue(alertpresent,"Alert not presented");
   }
   
-  @Test
-  public void verifySigninWithInvalidCredentials() {
-	  LoginPage loginpage=new LoginPage(driver);
-	  loginpage.enterUserNameOnUsernameField("ain");
-	  loginpage.enterPasswordOnPasswordField("ain");
-	  loginpage.clickOnSigninButton();
-	 boolean alertpresent= loginpage.isAlertPresent();
-	  Assert.assertTrue(alertpresent,"Alert not presented");
-  }
+  @Test(dataProvider="dpMethod")
+  public void verifyLoginWithInvalidUsernameInvalidPassword(String username,String password)
+  {
+	  
+	  LoginPage login=new LoginPage(driver); 
+	  login.enterUserNameOnUsernameField(username);
+	  login.enterPasswordOnPasswordField(password);
+	  login.clickOnSigninButton();
+	  boolean alertpresent=login.isAlertPresent();
+	  Assert.assertTrue(alertpresent, "Login failed for invalid credentials");
+	  }
+  @DataProvider
+  public Object[][] dpMethod()
+  {
+  		return new Object[][]
+  			
+  				{{"karl","asdfg"},{"dfrt","frttts"},{"mjhnbg","hgytr"}};
+  } 
+  
+  
+  
 }
