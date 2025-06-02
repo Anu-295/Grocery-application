@@ -1,15 +1,15 @@
 <suite name="Cross Browsing Testing">
 	<test name="test1">
-	<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testscript.LoginTest"></class>
 		</classes>
 	</test>
 	<test name="test2">
-	<parameter name="browser" value="Firefox"></parameter>
+		<parameter name="browser" value="Firefox"></parameter>
 		<classes>
 			<class name="testscript.CategoryTest"></class>
 		</classes>
 	</test>
-	
+
 </suite>

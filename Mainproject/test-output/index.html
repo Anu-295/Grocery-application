@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-myTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">myTestSuite</span>
+              <span class="suite-name border-skipped">myTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">16 methods,  1 skipped,  15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-myTestSuite" class="hide-methods skipped suite-myTestSuite"> (hide)</a> <!-- hide-methods skipped suite-myTestSuite -->
+                      <a href="#" panel-name="suite-myTestSuite" class="show-methods skipped suite-myTestSuite"> (show)</a> <!-- show-methods skipped suite-myTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-myTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.NewsTest" class="method navigator-link" hash-for-method="editNews">editNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-myTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -148,17 +162,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)">verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg)">verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr)">verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-myTestSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)">verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,6 +202,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-myTestSuite" class="panel myTestSuite">
+          <div class="suite-myTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.NewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNews">
+                  </a> <!-- editNews -->
+                  <span class="method-name">editNews</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=137.0.7151.41)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8952ea8a18ceabdcc9b99c045ad4fad, findElement {using=xpath, value=//p[text()=&apos;Manage News&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: /var/folders/1c/7ftf0fn14j9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49996/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8952ea8a18ceabdcc9b99c045ad4fad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pages.HomePage.clickOnManageNews(HomePage.java:41)
+	at testscript.NewsTest.editNews(NewsTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-skipped -->
           <div class="suite-myTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -199,6 +256,88 @@
                   <a name="editContactDetails">
                   </a> <!-- editContactDetails -->
                   <span class="method-name">editContactDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.CategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewCategory">
+                  </a> <!-- createNewCategory -->
+                  <span class="method-name">createNewCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editNewCategory">
+                  </a> <!-- editNewCategory -->
+                  <span class="method-name">editNewCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchName">
+                  </a> <!-- searchName -->
+                  <span class="method-name">searchName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-myTestSuite-class-passed -->
+          <div class="suite-myTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)">
+                  </a> <!-- verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts) -->
+                  <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
+                  <span class="parameters">(dfrt,frttts)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg)">
+                  </a> <!-- verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg) -->
+                  <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
+                  <span class="parameters">(karl,asdfg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr)">
+                  </a> <!-- verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr) -->
+                  <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
+                  <span class="parameters">(mjhnbg,hgytr)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninWithInvalidUsernameAndValidPassword">
+                  </a> <!-- verifySigninWithInvalidUsernameAndValidPassword -->
+                  <span class="method-name">verifySigninWithInvalidUsernameAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninWithValidUsernameAndInvalidPassword">
+                  </a> <!-- verifySigninWithValidUsernameAndInvalidPassword -->
+                  <span class="method-name">verifySigninWithValidUsernameAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLoginWithValidCredential">
+                  </a> <!-- verifyUserLoginWithValidCredential -->
+                  <span class="method-name">verifyUserLoginWithValidCredential</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,88 +389,6 @@
                   <a name="managefooterText">
                   </a> <!-- managefooterText -->
                   <span class="method-name">managefooterText</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-myTestSuite-class-passed -->
-          <div class="suite-myTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg)">
-                  </a> <!-- verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg) -->
-                  <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
-                  <span class="parameters">(karl,asdfg)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr)">
-                  </a> <!-- verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr) -->
-                  <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
-                  <span class="parameters">(mjhnbg,hgytr)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)">
-                  </a> <!-- verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts) -->
-                  <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
-                  <span class="parameters">(dfrt,frttts)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySigninWithInvalidUsernameAndValidPassword">
-                  </a> <!-- verifySigninWithInvalidUsernameAndValidPassword -->
-                  <span class="method-name">verifySigninWithInvalidUsernameAndValidPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySigninWithValidUsernameAndInvalidPassword">
-                  </a> <!-- verifySigninWithValidUsernameAndInvalidPassword -->
-                  <span class="method-name">verifySigninWithValidUsernameAndInvalidPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserLoginWithValidCredential">
-                  </a> <!-- verifyUserLoginWithValidCredential -->
-                  <span class="method-name">verifyUserLoginWithValidCredential</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-myTestSuite-class-passed -->
-          <div class="suite-myTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.CategoryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createNewCategory">
-                  </a> <!-- createNewCategory -->
-                  <span class="method-name">createNewCategory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="editNewCategory">
-                  </a> <!-- editNewCategory -->
-                  <span class="method-name">editNewCategory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchName">
-                  </a> <!-- searchName -->
-                  <span class="method-name">searchName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -409,72 +466,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createNewCategory')
 data.setCell(0, 2, 'testscript.CategoryTest')
-data.setCell(0, 3, 6482);
+data.setCell(0, 3, 7689);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'editContactDetails')
 data.setCell(1, 2, 'testscript.ContactTest')
-data.setCell(1, 3, 4665);
+data.setCell(1, 3, 5038);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteNews')
-data.setCell(2, 2, 'testscript.NewsTest')
-data.setCell(2, 3, 4618);
+data.setCell(2, 1, 'managefooterText')
+data.setCell(2, 2, 'testscript.FooterTextTest')
+data.setCell(2, 3, 4749);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'managefooterText')
-data.setCell(3, 2, 'testscript.FooterTextTest')
-data.setCell(3, 3, 4236);
+data.setCell(3, 1, 'editNews')
+data.setCell(3, 2, 'testscript.NewsTest')
+data.setCell(3, 3, 4529);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'editNewCategory')
 data.setCell(4, 2, 'testscript.CategoryTest')
-data.setCell(4, 3, 4098);
+data.setCell(4, 3, 4506);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'editNews')
+data.setCell(5, 1, 'searchNewsInTitleField')
 data.setCell(5, 2, 'testscript.NewsTest')
-data.setCell(5, 3, 3974);
+data.setCell(5, 3, 4161);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'searchNewsInTitleField')
+data.setCell(6, 1, 'generateNews')
 data.setCell(6, 2, 'testscript.NewsTest')
-data.setCell(6, 3, 3790);
+data.setCell(6, 3, 3919);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'generateNews')
-data.setCell(7, 2, 'testscript.NewsTest')
-data.setCell(7, 3, 3530);
+data.setCell(7, 1, 'searchName')
+data.setCell(7, 2, 'testscript.CategoryTest')
+data.setCell(7, 3, 3799);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'searchName')
-data.setCell(8, 2, 'testscript.CategoryTest')
-data.setCell(8, 3, 3380);
+data.setCell(8, 1, 'deleteNews')
+data.setCell(8, 2, 'testscript.NewsTest')
+data.setCell(8, 3, 3376);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyUserLoginWithValidCredential')
 data.setCell(9, 2, 'testscript.LoginTest')
-data.setCell(9, 3, 2155);
+data.setCell(9, 3, 2388);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
-data.setCell(10, 2, 'testscript.LoginTest')
-data.setCell(10, 3, 1202);
+data.setCell(10, 1, 'editNews')
+data.setCell(10, 2, 'testscript.NewsTest')
+data.setCell(10, 3, 1573);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifySigninWithInvalidUsernameAndValidPassword')
+data.setCell(11, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
 data.setCell(11, 2, 'testscript.LoginTest')
-data.setCell(11, 3, 1191);
+data.setCell(11, 3, 1222);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
+data.setCell(12, 1, 'verifySigninWithInvalidUsernameAndValidPassword')
 data.setCell(12, 2, 'testscript.LoginTest')
-data.setCell(12, 3, 969);
+data.setCell(12, 3, 1214);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
 data.setCell(13, 2, 'testscript.LoginTest')
-data.setCell(13, 3, 930);
+data.setCell(13, 3, 1032);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'verifySigninWithValidUsernameAndInvalidPassword')
 data.setCell(14, 2, 'testscript.LoginTest')
-data.setCell(14, 3, 921);
+data.setCell(14, 3, 1019);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
+data.setCell(15, 2, 'testscript.LoginTest')
+data.setCell(15, 3, 983);
 window.suiteTableData['myTestSuite']= { tableData: data, tableDiv: 'times-div-myTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-myTestSuite">
               </div> <!-- times-div-myTestSuite -->
             </div> <!-- times-div -->
@@ -507,191 +568,203 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword(karl, asdfg)</span>
-                <span class="method-start">6374 ms</span>
+                <span class="method-start">8961 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verif...)</span>
-                <span class="method-start">7358 ms</span>
+                <span class="method-start">10010 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">7444 ms</span>
+                <span class="method-start">10096 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword(dfrt, frttts)</span>
-                <span class="method-start">13590 ms</span>
+                <span class="method-start">16334 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verif...)</span>
-                <span class="method-start">14520 ms</span>
+                <span class="method-start">17318 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">14603 ms</span>
+                <span class="method-start">17401 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword(mjhnbg, hgytr)</span>
-                <span class="method-start">20722 ms</span>
+                <span class="method-start">23773 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verif...)</span>
-                <span class="method-start">21925 ms</span>
+                <span class="method-start">24995 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">22007 ms</span>
+                <span class="method-start">25079 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySigninWithInvalidUsernameAndValidPassword</span>
-                <span class="method-start">28143 ms</span>
+                <span class="method-start">31336 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifySigninWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.ver...)</span>
-                <span class="method-start">29334 ms</span>
+                <span class="method-start">32550 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">29419 ms</span>
+                <span class="method-start">32635 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySigninWithValidUsernameAndInvalidPassword</span>
-                <span class="method-start">35569 ms</span>
+                <span class="method-start">38832 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifySigninWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.ver...)</span>
-                <span class="method-start">36490 ms</span>
+                <span class="method-start">39851 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">36573 ms</span>
+                <span class="method-start">39935 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginWithValidCredential</span>
-                <span class="method-start">42690 ms</span>
+                <span class="method-start">46077 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserLoginWithValidCredential status=SUCCESS method=LoginTest.verifyUserLoginW...)</span>
-                <span class="method-start">44846 ms</span>
+                <span class="method-start">48466 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.CategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">44931 ms</span>
+                <span class="method-start">48550 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewCategory</span>
-                <span class="method-start">51087 ms</span>
+                <span class="method-start">54796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=createNewCategory status=SUCCESS method=CategoryTest.createNewCategory()[pri:0, ins...)</span>
-                <span class="method-start">57569 ms</span>
+                <span class="method-start">62486 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">57654 ms</span>
+                <span class="method-start">62571 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editNewCategory</span>
-                <span class="method-start">63805 ms</span>
+                <span class="method-start">68962 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=editNewCategory status=SUCCESS method=CategoryTest.editNewCategory()[pri:0, instanc...)</span>
-                <span class="method-start">67903 ms</span>
+                <span class="method-start">73469 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">67988 ms</span>
+                <span class="method-start">73554 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchName</span>
-                <span class="method-start">74124 ms</span>
+                <span class="method-start">79825 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=searchName status=SUCCESS method=CategoryTest.searchName()[pri:0, instance:testscri...)</span>
-                <span class="method-start">77504 ms</span>
+                <span class="method-start">83624 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.ContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">77589 ms</span>
+                <span class="method-start">83708 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editContactDetails</span>
-                <span class="method-start">83697 ms</span>
+                <span class="method-start">89911 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=editContactDetails status=SUCCESS method=ContactTest.editContactDetails()[pri:0, in...)</span>
-                <span class="method-start">88362 ms</span>
+                <span class="method-start">94949 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.FooterTextTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">88447 ms</span>
+                <span class="method-start">95034 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">managefooterText</span>
-                <span class="method-start">94584 ms</span>
+                <span class="method-start">101314 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=managefooterText status=SUCCESS method=FooterTextTest.managefooterText()[pri:0, ins...)</span>
-                <span class="method-start">98820 ms</span>
+                <span class="method-start">106064 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.NewsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">98904 ms</span>
+                <span class="method-start">106145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteNews</span>
-                <span class="method-start">105093 ms</span>
+                <span class="method-start">113031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=deleteNews status=SUCCESS method=NewsTest.deleteNews()[pri:0, instance:testscript.N...)</span>
-                <span class="method-start">109712 ms</span>
+                <span class="method-start">116408 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">109793 ms</span>
+                <span class="method-start">116491 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editNews</span>
-                <span class="method-start">115932 ms</span>
+                <span class="method-start">122864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest...)</span>
+                <span class="method-start">124438 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitialiseBrowser(Chrome)</span>
+                <span class="method-start">124467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editNews</span>
+                <span class="method-start">131359 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=editNews status=SUCCESS method=NewsTest.editNews()[pri:0, instance:testscript.NewsT...)</span>
-                <span class="method-start">119907 ms</span>
+                <span class="method-start">135888 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">119990 ms</span>
+                <span class="method-start">135972 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">generateNews</span>
-                <span class="method-start">126120 ms</span>
+                <span class="method-start">142705 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=generateNews status=SUCCESS method=NewsTest.generateNews()[pri:0, instance:testscri...)</span>
-                <span class="method-start">129650 ms</span>
+                <span class="method-start">146624 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">InitialiseBrowser(Chrome)</span>
-                <span class="method-start">129732 ms</span>
+                <span class="method-start">146708 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchNewsInTitleField</span>
-                <span class="method-start">135813 ms</span>
+                <span class="method-start">153156 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=searchNewsInTitleField status=SUCCESS method=NewsTest.searchNewsInTitleField()[pri:...)</span>
-                <span class="method-start">139603 ms</span>
+                <span class="method-start">157318 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

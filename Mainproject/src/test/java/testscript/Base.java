@@ -16,54 +16,49 @@ import org.testng.annotations.Parameters;
 
 import constants.Constants;
 import utilities.ScreenshotUtility;
+import utilities.WaitUtilities;
 
 public class Base {
+	WaitUtilities implicitwait = new WaitUtilities();
 	Properties prop;
 	FileInputStream fs;
-	 WebDriver driver;
-	  @BeforeMethod(alwaysRun=true) //run in all the conditions
-	  @Parameters("browser")//giving parameterization
-	  public void InitialiseBrowser(String browser) throws Exception {
-		  Properties prop;
-			FileInputStream fs;
-		prop=new Properties();
-				fs=new FileInputStream(Constants.CONFIGFILE);//to read file from constant class
-				prop.load(fs);// to load the file
-				if(browser.equalsIgnoreCase("Chrome"))
-				{
-					driver=new ChromeDriver();
-				}
-				else if(browser.equalsIgnoreCase("Firefox"))
-				{
-					driver=new FirefoxDriver();
-				}
-				else if(browser.equalsIgnoreCase("Edge"))
-				{
-					driver=new EdgeDriver();
-				}
-				else
-				{
-					throw new Exception("Invalid browser");
-				}
-				 
-				 driver.get(prop.getProperty("url"));
+	WebDriver driver;
 
-		  driver.manage().window().maximize();
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-	  }
+	@BeforeMethod(alwaysRun = true) // run in all the conditions
+	@Parameters("browser") // giving parameterization
+	public void InitialiseBrowser(String browser) throws Exception {
+		Properties prop;
+		FileInputStream fs;
+		prop = new Properties();
+		fs = new FileInputStream(Constants.CONFIGFILE);// to read file from constant class
+		prop.load(fs);// to load the file
+		if (browser.equalsIgnoreCase("Chrome")) {
+			driver = new ChromeDriver();
+		} else if (browser.equalsIgnoreCase("Firefox")) {
+			driver = new FirefoxDriver();
+		} else if (browser.equalsIgnoreCase("Edge")) {
+			driver = new EdgeDriver();
+		} else {
+			throw new Exception("Invalid browser");
+		}
 
-	  
-		  @AfterMethod(alwaysRun=true) 
-		 	public void driverQuit(ITestResult itestresult) throws IOException //ITestResult is interface ittestresult is instance 
-		 	{ 
-		 		if(itestresult.getStatus()==ITestResult.FAILURE)//if test result is failure 
-		 		{ 
-		 			ScreenshotUtility screenshot=new ScreenshotUtility(); 
-		 			screenshot.getScreenshot(driver,itestresult.getName()); 
-		 		} 
-		 		driver.quit(); 
-		 			 
-		 	}
-	   
-  }
-	  
+		driver.get(prop.getProperty("url"));
+
+		driver.manage().window().maximize();
+		implicitwait.implicitwait(driver);
+	}
+
+	@AfterMethod(alwaysRun = true)
+	public void driverQuit(ITestResult itestresult) throws IOException // ITestResult is interface ittestresult is
+																		// instance
+	{
+		if (itestresult.getStatus() == ITestResult.FAILURE)// if test result is failure
+		{
+			ScreenshotUtility screenshot = new ScreenshotUtility();
+			screenshot.getScreenshot(driver, itestresult.getName());
+		}
+		driver.quit();
+
+	}
+
+}

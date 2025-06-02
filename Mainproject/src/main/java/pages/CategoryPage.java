@@ -63,7 +63,7 @@ public CategoryPage editCategory()
 {
 editButton.click();
 deleteButton.click();
-driver.switchTo().alert().accept();
+generalUtility.simpleAlert(driver, deleteButton);
 generalUtility.clickJavaScriptExecutor(updateButton, driver);
 return this;
 }
