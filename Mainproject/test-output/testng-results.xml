@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="16" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-02T10:55:12 IST" name="myTestSuite" finished-at="2025-06-02T10:57:49 IST" duration-ms="157414">
+  <suite started-at="2025-06-03T07:53:42 IST" name="myTestSuite" finished-at="2025-06-03T07:54:20 IST" duration-ms="38437">
     <groups>
-      <group name="smoke">
-        <method signature="LoginTest.verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@638ef7ed]" name="verifySigninWithInvalidUsernameAndValidPassword" class="testscript.LoginTest"/>
-        <method signature="LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@638ef7ed]" name="verifyUserLoginWithValidCredential" class="testscript.LoginTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-06-02T10:55:12 IST" name="myTest" finished-at="2025-06-02T10:57:49 IST" duration-ms="157414">
+    <test started-at="2025-06-03T07:53:42 IST" name="myTest" finished-at="2025-06-03T07:54:20 IST" duration-ms="38437">
       <class name="testscript.CategoryTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:00 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:56:07 IST" duration-ms="6246" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:53:42 IST" name="InitialiseBrowser" finished-at="2025-06-03T07:53:52 IST" duration-ms="10968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:07 IST" name="createNewCategory" finished-at="2025-06-02T10:56:14 IST" duration-ms="7689" status="PASS">
+        <test-method signature="createNewCategory()[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:53:52 IST" name="createNewCategory" finished-at="2025-06-03T07:54:00 IST" duration-ms="7092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:14 IST" name="driverQuit" finished-at="2025-06-02T10:56:14 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:00 IST" name="driverQuit" finished-at="2025-06-03T07:54:00 IST" duration-ms="89" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createNewCategory status=SUCCESS method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@452e19ca] output={null}]]]>
+                <![CDATA[[TestResult name=createNewCategory status=SUCCESS method=CategoryTest.createNewCategory()[pri:0, instance:testscript.CategoryTest@7975d1d8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:14 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:56:21 IST" duration-ms="6391" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:00 IST" name="InitialiseBrowser" finished-at="2025-06-03T07:54:06 IST" duration-ms="6270" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,22 +44,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:21 IST" name="editNewCategory" finished-at="2025-06-02T10:56:25 IST" duration-ms="4506" status="PASS">
+        <test-method signature="editNewCategory()[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:06 IST" name="editNewCategory" finished-at="2025-06-03T07:54:10 IST" duration-ms="4217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editNewCategory -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:25 IST" name="driverQuit" finished-at="2025-06-02T10:56:25 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:10 IST" name="driverQuit" finished-at="2025-06-03T07:54:10 IST" duration-ms="78" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editNewCategory status=SUCCESS method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@452e19ca] output={null}]]]>
+                <![CDATA[[TestResult name=editNewCategory status=SUCCESS method=CategoryTest.editNewCategory()[pri:0, instance:testscript.CategoryTest@7975d1d8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:25 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:56:32 IST" duration-ms="6271" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:10 IST" name="InitialiseBrowser" finished-at="2025-06-03T07:54:17 IST" duration-ms="6266" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,15 +70,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="searchName()[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:32 IST" name="searchName" finished-at="2025-06-02T10:56:35 IST" duration-ms="3799" status="PASS">
+        <test-method signature="searchName()[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:17 IST" name="searchName" finished-at="2025-06-03T07:54:20 IST" duration-ms="3304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchName -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@452e19ca]" started-at="2025-06-02T10:56:35 IST" name="driverQuit" finished-at="2025-06-02T10:56:35 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@7975d1d8]" started-at="2025-06-03T07:54:20 IST" name="driverQuit" finished-at="2025-06-03T07:54:20 IST" duration-ms="137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchName status=SUCCESS method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@452e19ca] output={null}]]]>
+                <![CDATA[[TestResult name=searchName status=SUCCESS method=CategoryTest.searchName()[pri:0, instance:testscript.CategoryTest@7975d1d8] output={null}]]]>
               </value>
             </param>
           </params>
@@ -90,462 +86,6 @@
           </reporter-output>
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.CategoryTest -->
-      <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:56:58 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:57:05 IST" duration-ms="6886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="deleteNews()[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:05 IST" name="deleteNews" finished-at="2025-06-02T10:57:08 IST" duration-ms="3376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:08 IST" name="driverQuit" finished-at="2025-06-02T10:57:08 IST" duration-ms="83" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteNews status=SUCCESS method=NewsTest.deleteNews()[pri:0, instance:testscript.NewsTest@3cfdd820] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:08 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:57:15 IST" duration-ms="6373" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method retried="true" signature="editNews()[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:15 IST" name="editNews" finished-at="2025-06-02T10:57:16 IST" duration-ms="1573" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=137.0.7151.41)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8952ea8a18ceabdcc9b99c045ad4fad, findElement {using=xpath, value=//p[text()='Manage News']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: /var/folders/1c/7ftf0fn14j9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49996/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8952ea8a18ceabdcc9b99c045ad4fad]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=137.0.7151.41)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8952ea8a18ceabdcc9b99c045ad4fad, findElement {using=xpath, value=//p[text()='Manage News']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.41, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: /var/folders/1c/7ftf0fn14j9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49996/devtoo..., se:cdpVersion: 137.0.7151.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8952ea8a18ceabdcc9b99c045ad4fad
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at pages.HomePage.clickOnManageNews(HomePage.java:41)
-at testscript.NewsTest.editNews(NewsTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:16 IST" name="driverQuit" finished-at="2025-06-02T10:57:16 IST" duration-ms="28" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editNews status=SKIP method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@3cfdd820] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:16 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:57:23 IST" duration-ms="6892" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="editNews()[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:23 IST" name="editNews" finished-at="2025-06-02T10:57:28 IST" duration-ms="4529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:28 IST" name="driverQuit" finished-at="2025-06-02T10:57:28 IST" duration-ms="84" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editNews status=SUCCESS method=NewsTest.editNews()[pri:0, instance:testscript.NewsTest@3cfdd820] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:28 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:57:34 IST" duration-ms="6733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="generateNews()[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:34 IST" name="generateNews" finished-at="2025-06-02T10:57:38 IST" duration-ms="3919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:38 IST" name="driverQuit" finished-at="2025-06-02T10:57:38 IST" duration-ms="84" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=generateNews status=SUCCESS method=NewsTest.generateNews()[pri:0, instance:testscript.NewsTest@3cfdd820] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:38 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:57:45 IST" duration-ms="6448" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:45 IST" name="searchNewsInTitleField" finished-at="2025-06-02T10:57:49 IST" duration-ms="4161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchNewsInTitleField -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@3cfdd820]" started-at="2025-06-02T10:57:49 IST" name="driverQuit" finished-at="2025-06-02T10:57:49 IST" duration-ms="83" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchNewsInTitleField status=SUCCESS method=NewsTest.searchNewsInTitleField()[pri:0, instance:testscript.NewsTest@3cfdd820] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.NewsTest -->
-      <class name="testscript.ContactTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.ContactTest@6b0d80ed]" started-at="2025-06-02T10:56:35 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:56:42 IST" duration-ms="6203" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="editContactDetails()[pri:0, instance:testscript.ContactTest@6b0d80ed]" started-at="2025-06-02T10:56:42 IST" name="editContactDetails" finished-at="2025-06-02T10:56:47 IST" duration-ms="5038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editContactDetails -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@6b0d80ed]" started-at="2025-06-02T10:56:47 IST" name="driverQuit" finished-at="2025-06-02T10:56:47 IST" duration-ms="85" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editContactDetails status=SUCCESS method=ContactTest.editContactDetails()[pri:0, instance:testscript.ContactTest@6b0d80ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.ContactTest -->
-      <class name="testscript.FooterTextTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.FooterTextTest@6f8e8894]" started-at="2025-06-02T10:56:47 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:56:53 IST" duration-ms="6280" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="managefooterText()[pri:0, instance:testscript.FooterTextTest@6f8e8894]" started-at="2025-06-02T10:56:53 IST" name="managefooterText" finished-at="2025-06-02T10:56:58 IST" duration-ms="4749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- managefooterText -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@6f8e8894]" started-at="2025-06-02T10:56:58 IST" name="driverQuit" finished-at="2025-06-02T10:56:58 IST" duration-ms="80" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=managefooterText status=SUCCESS method=FooterTextTest.managefooterText()[pri:0, instance:testscript.FooterTextTest@6f8e8894] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.FooterTextTest -->
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:12 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:55:21 IST" duration-ms="8961" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifyLoginWithInvalidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:21 IST" name="verifyLoginWithInvalidUsernameInvalidPassword" data-provider="dpMethod" finished-at="2025-06-02T10:55:22 IST" duration-ms="1032" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[karl]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[asdfg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidUsernameInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:22 IST" name="driverQuit" finished-at="2025-06-02T10:55:22 IST" duration-ms="86" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:22 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:55:28 IST" duration-ms="6238" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifyLoginWithInvalidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:28 IST" name="verifyLoginWithInvalidUsernameInvalidPassword" data-provider="dpMethod" finished-at="2025-06-02T10:55:29 IST" duration-ms="983" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[dfrt]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[frttts]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidUsernameInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:29 IST" name="driverQuit" finished-at="2025-06-02T10:55:29 IST" duration-ms="83" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:29 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:55:36 IST" duration-ms="6372" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifyLoginWithInvalidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:36 IST" name="verifyLoginWithInvalidUsernameInvalidPassword" data-provider="dpMethod" finished-at="2025-06-02T10:55:37 IST" duration-ms="1222" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mjhnbg]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[hgytr]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidUsernameInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:37 IST" name="driverQuit" finished-at="2025-06-02T10:55:37 IST" duration-ms="83" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:37 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:55:43 IST" duration-ms="6257" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:43 IST" name="verifySigninWithInvalidUsernameAndValidPassword" finished-at="2025-06-02T10:55:44 IST" duration-ms="1214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySigninWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:44 IST" name="driverQuit" finished-at="2025-06-02T10:55:44 IST" duration-ms="84" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySigninWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.verifySigninWithInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@638ef7ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:44 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:55:51 IST" duration-ms="6196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifySigninWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:51 IST" name="verifySigninWithValidUsernameAndInvalidPassword" finished-at="2025-06-02T10:55:52 IST" duration-ms="1019" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySigninWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:52 IST" name="driverQuit" finished-at="2025-06-02T10:55:52 IST" duration-ms="84" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySigninWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifySigninWithValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@638ef7ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:52 IST" name="InitialiseBrowser" finished-at="2025-06-02T10:55:58 IST" duration-ms="6142" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitialiseBrowser -->
-        <test-method signature="verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:55:58 IST" name="verifyUserLoginWithValidCredential" finished-at="2025-06-02T10:56:00 IST" duration-ms="2388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLoginWithValidCredential -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@638ef7ed]" started-at="2025-06-02T10:56:00 IST" name="driverQuit" finished-at="2025-06-02T10:56:00 IST" duration-ms="83" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithValidCredential status=SUCCESS method=LoginTest.verifyUserLoginWithValidCredential()[pri:0, instance:testscript.LoginTest@638ef7ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.LoginTest -->
     </test> <!-- myTest -->
   </suite> <!-- myTestSuite -->
 </testng-results>

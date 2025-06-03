@@ -42,19 +42,19 @@ public class GeneralUtilities {
 		js.executeScript("window.scrollBy(0,-350)", "");
 	}
 
-	public void simpleAlert(WebDriver driver, WebElement element) {
-		element.click();
+	public void simpleAlert(WebDriver driver) {
+	
 		driver.switchTo().alert().accept();
 	}
 
-	public void confirmationAlert(WebDriver driver, WebElement element, String alerttext) {
-		element.click();
+	public void confirmationAlert(WebDriver driver,String alerttext) {
+	
 		alerttext = driver.switchTo().alert().getText();
 		driver.switchTo().alert().dismiss();
 	}
 
-	public void promptAlert(WebDriver driver, WebElement element, String input) {
-		element.click();
+	public void promptAlert(WebDriver driver,String input) {
+		
 		driver.switchTo().alert().sendKeys(input);
 		driver.switchTo().alert().accept();
 	}

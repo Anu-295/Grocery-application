@@ -11,7 +11,7 @@
       <class name="testscript.CategoryTest">
         <methods>
           <include name="InitialiseBrowser"/>
-          <include name="searchName"/>
+          <include name="editNewCategory"/>
           <include name="driverQuit"/>
         </methods>
       </class> <!-- testscript.CategoryTest -->
